@@ -1,0 +1,18 @@
+ERROR 2017-06-08 11:23:52,216 48057ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:25:35,697 13759ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:26:37,721 17564ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:27:04,204 44046ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:33:00,639 19183ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:33:00,639 19183ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:34:12,808 42421ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:34:30,521 60135ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:35:00,798 14632ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:38:14,205  6719ms WebApiApplication      LogError           - DescRecurso
+ERROR 2017-06-08 11:50:40,702 11294ms WebApiApplication      LogError           - c:\DESENV\GestaoCampanhas\GestaoCampanhas.Apresentacao\Views\Shared\_Menu.cshtml(49): error CS1061: 'GestaoCampanhas.Dominio.Entidades.Recurso' não contém uma definição para 'DescRecurso' e nenhum método de extensão 'DescRecurso' aceita que um primeiro argumento de tipo 'GestaoCampanhas.Dominio.Entidades.Recurso' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-06-08 14:11:49,237 1757128ms WebApiApplication      LogError           - The controller for path '/ConsCalendario' was not found or does not implement IController.
+ERROR 2017-06-08 15:24:20,597 65434ms WebApiApplication      LogError           - The controller for path '/UpdCalendario' was not found or does not implement IController.
+ERROR 2017-06-09 10:35:04,254 347756ms WebApiApplication      LogError           - The controller for path '/ConsCalendario' was not found or does not implement IController.
+ERROR 2017-06-12 12:57:20,724 16256ms WebApiApplication      LogError           - A chave fornecida não estava presente no dicionário.
+ERROR 2017-06-13 10:18:34,344 10372ms WebApiApplication      LogError           - A chave fornecida não estava presente no dicionário.
+ERROR 2017-06-13 10:20:05,662 15415ms WebApiApplication      LogError           - The controller for path '/Camapnhas' was not found or does not implement IController.
+ERROR 2017-06-13 10:20:17,183 26936ms WebApiApplication      LogError           - The controller for path '/Camapanhas' was not found or does not implement IController.

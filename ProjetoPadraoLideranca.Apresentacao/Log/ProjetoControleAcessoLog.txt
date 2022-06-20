@@ -1,0 +1,234 @@
+ERROR 2017-02-02 17:14:04,037 28411ms WebApiApplication      LogError           - Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-02 17:15:41,230 125605ms WebApiApplication      LogError           - Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 09:28:33,557 73274ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:28:46,524 86241ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:29:22,558 28447ms WebApiApplication      LogError           - Cannot open database "ControleDeAcesso" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 09:52:29,526 78848ms WebApiApplication      LogError           - Cannot open database "ControleDeAcesso" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 09:55:44,728 25162ms WebApiApplication      LogError           - Cannot open database "ControleDeAcesso" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 09:55:59,336 39769ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:56:11,488 51922ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:56:14,515 54948ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:56:21,535 61969ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:56:26,343 66777ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:57:26,142 38083ms WebApiApplication      LogError           - Cannot open database "ControleDeAcesso" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 09:58:29,474 101414ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.HomeController'.
+ERROR 2017-02-03 09:59:40,697 172638ms WebApiApplication      LogError           - Cannot open database "ControleDeAcesso" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-03 10:12:48,838 960779ms WebApiApplication      LogError           - Could not find stored procedure 'dbo.RecursoProc'.
+ERROR 2017-02-03 10:26:41,887 1793828ms WebApiApplication      LogError           - Could not find stored procedure 'dbo.RecursoProc'.
+ERROR 2017-02-03 11:11:26,661 2552395ms WebApiApplication      LogError           - The controller for path '/Impressao' was not found or does not implement IController.
+ERROR 2017-02-03 11:15:19,496 2785230ms WebApiApplication      LogError           - The controller for path '/Sistema' was not found or does not implement IController.
+ERROR 2017-02-03 11:16:41,870 2867604ms WebApiApplication      LogError           - The controller for path '/Impressao' was not found or does not implement IController.
+ERROR 2017-02-03 11:16:46,064 2871799ms WebApiApplication      LogError           - The controller for path '/Impressao' was not found or does not implement IController.
+ERROR 2017-02-03 21:49:16,248 123823ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-02-08 08:59:23,123 57846054ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-02-09 14:44:18,989 15338ms WebApiApplication      LogError           - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Aplicacao/Index.aspx
+~/Views/Aplicacao/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Aplicacao/Index.cshtml
+~/Views/Aplicacao/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+ERROR 2017-02-09 14:47:58,378 63756ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'idStatusSistema'.
+ERROR 2017-02-09 14:48:14,732 80110ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'idStatusSistema'.
+ERROR 2017-02-10 09:27:55,248 1367055ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-02-10 16:40:53,791 88491ms WebApiApplication      LogError           - JSON primitivo inválido: recursos.
+ERROR 2017-02-10 16:41:02,859 97559ms WebApiApplication      LogError           - A public action method 'CarregarRecursoPerfilCheckBox' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.AssociacaoPerfilController'.
+ERROR 2017-02-10 16:41:21,288 115987ms WebApiApplication      LogError           - JSON primitivo inválido: recursos.
+ERROR 2017-02-13 10:13:42,446 61299ms WebApiApplication      LogError           - A public action method 'DesassociarUsuarioPerfil' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.AssociacaoPerfilController'.
+ERROR 2017-02-13 17:23:50,513 11582ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-02-14 08:50:08,659 31008ms WebApiApplication      LogError           - Cannot open database "AutenticacaoDesenv" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-14 14:23:32,340 42374ms WebApiApplication      LogError           - Procedure or function StatusRecursoListaProc has too many arguments specified.
+ERROR 2017-02-15 09:18:58,194 79060ms WebApiApplication      LogError           - Could not find stored procedure 'cda.RecursoDetalheProc'.
+ERROR 2017-02-15 09:19:13,008 93874ms WebApiApplication      LogError           - Could not find stored procedure 'cda.RecursoDetalheProc'.
+ERROR 2017-02-15 17:36:52,403 34541ms WebApiApplication      LogError           - Cannot open database "AutenticacaoDesenv" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-15 17:38:03,222 105360ms WebApiApplication      LogError           - Cannot open database "AutenticacaoDesenv" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-15 17:38:39,681 141819ms WebApiApplication      LogError           - Cannot open database "AutenticacaoDesenv" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-16 11:11:39,254 919702ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\429bf69b\6f3fc098\App_Web__create.cshtml.fad36fe4.rqsisooh.0.cs(480): error CS1513: } esperada
+ERROR 2017-02-16 11:12:17,657 958105ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\429bf69b\6f3fc098\App_Web__create.cshtml.fad36fe4.i1zuv7ww.0.cs(480): error CS1513: } esperada
+ERROR 2017-02-16 11:12:50,997 991445ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\429bf69b\6f3fc098\App_Web__create.cshtml.fad36fe4.1yzvn7ys.0.cs(480): error CS1513: } esperada
+ERROR 2017-02-16 11:15:03,099 1123547ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\429bf69b\6f3fc098\App_Web__create.cshtml.fad36fe4.hr1dtmce.0.cs(480): error CS1513: } esperada
+ERROR 2017-02-16 11:15:10,280 1130729ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\429bf69b\6f3fc098\App_Web__create.cshtml.fad36fe4.hr1dtmce.0.cs(480): error CS1513: } esperada
+ERROR 2017-02-17 11:26:02,611 4052757ms WebApiApplication      LogError           - A public action method 'Create' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.PerfilController'.
+ERROR 2017-02-17 11:36:03,605 523095ms WebApiApplication      LogError           - Referência de objeto não definida para uma instância de um objeto.
+ERROR 2017-02-21 10:28:13,777 32789ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'IDStatusUsuario'.
+ERROR 2017-02-21 11:31:10,044 2333328ms WebApiApplication      LogError           - A public action method 'Create' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.AplicacaoController'.
+ERROR 2017-02-21 13:59:52,548 537126ms WebApiApplication      LogError           - Encountered end tag "div" with no matching start tag.  Are your start/end tags properly balanced?
+
+ERROR 2017-02-21 15:27:58,926 20286ms WebApiApplication      LogError           - DataBinding: 'ProjetoControleAcesso.Dominio.Entidades.StatusSistema' não contém uma propriedade com o nome 'IDSistema'.
+ERROR 2017-02-21 17:24:08,838 6328055ms WebApiApplication      LogError           - Could not find stored procedure 'cda.AplicacaoDetalheProc'.
+ERROR 2017-02-21 17:24:34,402 6353619ms WebApiApplication      LogError           - c:\DESENV\ControleAcesso\branches\v2.0.1.1\fontes\ProjetoControleAcesso.Apresentacao\Views\Aplicacao\_Detalhe.cshtml(33): error CS1525: Termo de expressão inválido ','
+ERROR 2017-02-21 17:24:40,511 6359728ms WebApiApplication      LogError           - c:\DESENV\ControleAcesso\branches\v2.0.1.1\fontes\ProjetoControleAcesso.Apresentacao\Views\Aplicacao\_Detalhe.cshtml(33): error CS1525: Termo de expressão inválido ','
+ERROR 2017-02-22 08:59:32,709 32612ms WebApiApplication      LogError           - Cannot open database "AutenticacaoDesenv" requested by the login. The login failed.
+Login failed for user 'ControleDeAcessoUser'.
+ERROR 2017-02-22 17:14:38,335 482611ms WebApiApplication      LogError           - A public action method 'UsuarioGravaSenha' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.AplicacaoController'.
+ERROR 2017-02-23 15:03:29,626 24692ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'IDStatusUsuario'.
+ERROR 2017-02-23 15:12:40,150 15454ms WebApiApplication      LogError           - The controller for path '/Paramtro/PequsiaParametro' was not found or does not implement IController.
+ERROR 2017-02-23 15:12:48,681 23984ms WebApiApplication      LogError           - The controller for path '/Paramtro/PequsiaParametro' was not found or does not implement IController.
+ERROR 2017-02-23 15:13:24,308 59611ms WebApiApplication      LogError           - The controller for path '/Paramtro/PequsiaParametro' was not found or does not implement IController.
+ERROR 2017-03-02 15:49:36,055 18065ms WebApiApplication      LogError           - c:\DESENV\ControleAcesso\branches\v2.0.1.1\fontes\ProjetoControleAcesso.Apresentacao\Views\RelUsuarioPerfil\Index.cshtml(91): error CS0103: O nome 'permissao' não existe no contexto atual
+ERROR 2017-03-02 15:50:11,035 53045ms WebApiApplication      LogError           - c:\DESENV\ControleAcesso\branches\v2.0.1.1\fontes\ProjetoControleAcesso.Apresentacao\Views\RelUsuarioPerfil\Index.cshtml(127): error CS0103: O nome 'permissao' não existe no contexto atual
+ERROR 2017-03-06 10:44:46,058 762272ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-06 22:07:32,687 17893892ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-07 10:52:48,391 93931ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'IDAplicacao'.
+ERROR 2017-03-08 15:45:20,649 67965ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 15:47:27,512 52597ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 15:47:31,085 56169ms WebApiApplication      LogError           - A public action method 'GerandoTiposelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 15:50:11,509 51547ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 15:50:32,142 72180ms WebApiApplication      LogError           - A public action method 'GerandoTiposelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 15:52:28,395 43183ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:00:16,804 511592ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:01:23,559 578347ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:01:49,622 604410ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:02:32,093 646881ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:03:08,583 683371ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:06:12,257 867045ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:07:25,020 939808ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:07:34,596 949384ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:07:37,837 952625ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:08:26,770 1001558ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:08:40,632 1015421ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:08:51,853 1026641ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:14:17,350 1352138ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:15:18,455 1413244ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:15:22,283 1417071ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:15:25,613 1420401ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:16:09,571 1464359ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:17:12,121 1526909ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:18:23,605 1598394ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:22:17,269 1832057ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:22:33,151 1847939ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:22:44,941 1859729ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:22:59,610 1874398ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:23:12,154 1886942ms WebApiApplication      LogError           - A public action method 'GerandoTipoRelatorio' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.RelUsuarioPerfilController'.
+ERROR 2017-03-08 16:26:48,644 2103433ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:28:48,586 2223374ms WebApiApplication      LogError           - JSON primitivo inválido: listaRelatorio.
+ERROR 2017-03-08 16:30:08,641 2303430ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:36:20,872 2675660ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:39:32,079 2866867ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:42:56,666 36980ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:43:00,252 40566ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:48:14,415 18785ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:53:32,105 205666ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 16:57:26,028 439588ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:40:02,441 68570ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:40:07,092 73221ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:41:44,059 21446ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:46:29,482 306869ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:46:31,789 309176ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:56:08,266 21601ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:57:19,769 93104ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 17:58:56,163 189498ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:05:58,414 29597ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:06:08,533 39716ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:07:21,719 112902ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:12:16,007 237125ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:12:18,884 240002ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:13:06,504 287623ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-08 18:20:42,446 54882ms WebApiApplication      LogError           - Tamanho máximo de solicitação excedido.
+ERROR 2017-03-14 14:30:34,246 43420ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'idStatusSistema'.
+ERROR 2017-03-14 15:22:46,557 236853ms WebApiApplication      LogError           - A public action method 'Create' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketController'.
+ERROR 2017-03-16 14:01:14,772 53896ms WebApiApplication      LogError           - DataBinding: 'System.Web.Mvc.SelectListItem' não contém uma propriedade com o nome 'idTicket'.
+ERROR 2017-03-16 14:08:46,327 51916ms WebApiApplication      LogError           - DataBinding: 'System.Web.Mvc.SelectListItem' não contém uma propriedade com o nome 'idTicket'.
+ERROR 2017-03-17 09:00:41,634 59716919ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-17 16:07:03,018 18275ms WebApiApplication      LogError           - The partial view '_TicketHome' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_TicketHome.aspx
+~/Views/Home/_TicketHome.ascx
+~/Views/Shared/_TicketHome.aspx
+~/Views/Shared/_TicketHome.ascx
+~/Views/Home/_TicketHome.cshtml
+~/Views/Home/_TicketHome.vbhtml
+~/Views/Shared/_TicketHome.cshtml
+~/Views/Shared/_TicketHome.vbhtml
+ERROR 2017-03-17 16:07:12,160 27416ms WebApiApplication      LogError           - The partial view '_TicketHome' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_TicketHome.aspx
+~/Views/Home/_TicketHome.ascx
+~/Views/Shared/_TicketHome.aspx
+~/Views/Shared/_TicketHome.ascx
+~/Views/Home/_TicketHome.cshtml
+~/Views/Home/_TicketHome.vbhtml
+~/Views/Shared/_TicketHome.cshtml
+~/Views/Shared/_TicketHome.vbhtml
+ERROR 2017-03-17 16:07:43,324 58581ms WebApiApplication      LogError           - The partial view '_TicketHome' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_TicketHome.aspx
+~/Views/Home/_TicketHome.ascx
+~/Views/Shared/_TicketHome.aspx
+~/Views/Shared/_TicketHome.ascx
+~/Views/Home/_TicketHome.cshtml
+~/Views/Home/_TicketHome.vbhtml
+~/Views/Shared/_TicketHome.cshtml
+~/Views/Shared/_TicketHome.vbhtml
+ERROR 2017-03-17 16:11:36,448 27251ms WebApiApplication      LogError           - The partial view '_TicketHome' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_TicketHome.aspx
+~/Views/Home/_TicketHome.ascx
+~/Views/Shared/_TicketHome.aspx
+~/Views/Shared/_TicketHome.ascx
+~/Views/Home/_TicketHome.cshtml
+~/Views/Home/_TicketHome.vbhtml
+~/Views/Shared/_TicketHome.cshtml
+~/Views/Shared/_TicketHome.vbhtml
+ERROR 2017-03-17 16:11:44,946 35749ms WebApiApplication      LogError           - The partial view '_TicketHome' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_TicketHome.aspx
+~/Views/Home/_TicketHome.ascx
+~/Views/Shared/_TicketHome.aspx
+~/Views/Shared/_TicketHome.ascx
+~/Views/Home/_TicketHome.cshtml
+~/Views/Home/_TicketHome.vbhtml
+~/Views/Shared/_TicketHome.cshtml
+~/Views/Shared/_TicketHome.vbhtml
+ERROR 2017-03-20 10:09:27,471 13178ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-21 14:51:51,538  6863ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-22 09:17:48,749 10564ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-22 14:39:14,128 32585ms WebApiApplication      LogError           - The controller for path '/TicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:10:00,920  1138ms WebApiApplication      LogError           - The controller for path '/Contrato' was not found or does not implement IController.
+ERROR 2017-03-22 15:21:52,689 13939ms WebApiApplication      LogError           - The controller for path '/TicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:33:04,063 407742ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:40:11,882 835561ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:55:19,295 10059ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:55:54,168 44931ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:55:58,566 49330ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:57:54,157 164921ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:58:02,556 173320ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 15:58:11,697 182460ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/CarregarTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 16:13:25,147 33240ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/PesquisaTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 16:13:44,517 52611ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/PesquisaTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-22 16:14:29,180 97273ms WebApiApplication      LogError           - The controller for path '/TicketHomolg/PesquisaTicketHomolog' was not found or does not implement IController.
+ERROR 2017-03-23 09:13:26,411  4791ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-24 09:58:32,955 67584146ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-24 11:01:27,459 798208ms WebApiApplication      LogError           - The current request for action 'HistoricoHomolog' on controller type 'TicketHomologController' is ambiguous between the following action methods:
+System.Web.Mvc.JsonResult HistoricoTicketHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+System.Web.Mvc.ActionResult HistoricoHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+ERROR 2017-03-24 11:01:44,232 814980ms WebApiApplication      LogError           - The current request for action 'HistoricoHomolog' on controller type 'TicketHomologController' is ambiguous between the following action methods:
+System.Web.Mvc.JsonResult HistoricoTicketHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+System.Web.Mvc.ActionResult HistoricoHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+ERROR 2017-03-24 11:02:07,476 838225ms WebApiApplication      LogError           - The current request for action 'HistoricoHomolog' on controller type 'TicketHomologController' is ambiguous between the following action methods:
+System.Web.Mvc.JsonResult HistoricoTicketHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+System.Web.Mvc.ActionResult HistoricoHomolog(System.Nullable`1[System.Int32]) on type ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController
+ERROR 2017-03-27 09:31:51,532  4818ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-27 13:55:21,814 69888ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:55:28,633 76708ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:55:31,407 79481ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:55:45,589 93664ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:57:51,726 55030ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:58:02,018 65322ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:58:06,172 69476ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 13:58:25,251 88555ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:04:18,010 441314ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:05:29,443 512747ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:08:25,093 688397ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:08:59,732 723036ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:09:00,833 724138ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:14:24,536 1047840ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:20:39,062 77468ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:21:07,044 105450ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.
+ERROR 2017-03-27 14:36:59,456 1057862ms WebApiApplication      LogError           - A public action method 'GerandoHistoricoTicketHomolog' was not found on controller 'ProjetoControleAcesso.Apresentacao.Controllers.TicketHomologController'.

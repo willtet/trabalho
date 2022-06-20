@@ -1,0 +1,150 @@
+ERROR 2017-01-23 16:26:39,383 287703ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:27:05,067 313387ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:27:18,807 327127ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:28:22,024 390344ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:28:46,611 414931ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:29:15,340 443661ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:30:53,785 542105ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:31:54,114 602434ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:32:10,290 618611ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/Create' was not found or does not implement IController.
+ERROR 2017-01-23 16:32:13,742 622062ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:33:11,169 679489ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:34:29,367 757687ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:34:39,936 768256ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:34:50,678 778998ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:38:42,042 1010363ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:39:21,354 1049674ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:39:31,005 1059325ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:39:35,804 1064124ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:40:16,030 1104351ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:41:50,483 15587ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-23 16:43:03,035 88140ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/PesquisaApuracao' was not found or does not implement IController.
+ERROR 2017-01-24 09:44:16,802 59344ms WebApiApplication      LogError           - c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\750e2a98\75d3f999\App_Web__create.cshtml.86ddd38a.8ioyb6_r.0.cs(31): error CS0234: O nome do namespace ou o tipo 'Apuracao' não existe no namespace 'ProjetoInventario.Dominio.Entidades'. Precisa de uma referência de assembly?
+ERROR 2017-01-24 09:45:08,235 110777ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Empresa\_Create.cshtml(19): error CS1061: 'ProjetoInventario.Dominio.Entidades.Empresa' não contém uma definição para 'Usuario' e nenhum método de extensão 'Usuario' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Empresa' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-24 09:48:33,355 315898ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Empresa\_Create.cshtml(19): error CS1061: 'ProjetoInventario.Dominio.Entidades.Empresa' não contém uma definição para 'Usuario' e nenhum método de extensão 'Usuario' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Empresa' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-24 10:35:12,260 36645ms WebApiApplication      LogError           - Login failed for user 'InventarioUser'.
+ERROR 2017-01-24 10:35:12,260 36645ms WebApiApplication      LogError           - Login failed for user 'InventarioUser'.
+ERROR 2017-01-24 10:35:12,261 36646ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:35:36,860 61245ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:35:52,355 76740ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:37:33,526 177911ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:37:59,257 203642ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:41:23,349 407734ms WebApiApplication      LogError           - A public action method 'Entrada' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.HomeController'.
+ERROR 2017-01-24 10:42:53,760 498145ms WebApiApplication      LogError           - Login failed for user 'InventarioUser'.
+ERROR 2017-01-24 11:01:31,181 1615566ms WebApiApplication      LogError           - Could not find stored procedure 'dbo.RecursoProc'.
+ERROR 2017-01-24 15:39:51,218 22563ms WebApiApplication      LogError           - The controller for path '/CadastroSorteio/Detalhe' was not found or does not implement IController.
+ERROR 2017-01-24 16:43:03,662 85289ms WebApiApplication      LogError           - DataBinding: 'ProjetoInventario.Dominio.Entidades.Departamento' não contém uma propriedade com o nome 'idDepto'.
+ERROR 2017-01-24 16:46:31,364 10494ms WebApiApplication      LogError           - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Departamento/Index.aspx
+~/Views/Departamento/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Departamento/Index.cshtml
+~/Views/Departamento/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+ERROR 2017-01-24 16:52:11,857 13129ms WebApiApplication      LogError           - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Departamento/Index.aspx
+~/Views/Departamento/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Departamento/Index.cshtml
+~/Views/Departamento/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+ERROR 2017-01-24 16:53:30,547 91819ms WebApiApplication      LogError           - The model item passed into the dictionary is of type 'ProjetoInventario.Dominio.Entidades.Computador', but this dictionary requires a model item of type 'ProjetoInventario.Dominio.Entidades.Empresa'.
+ERROR 2017-01-24 17:27:25,087 436726ms WebApiApplication      LogError           - The partial view 'Edit' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Computador/Edit.aspx
+~/Views/Computador/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/Computador/Edit.cshtml
+~/Views/Computador/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2017-01-24 17:32:15,646 727285ms WebApiApplication      LogError           - The partial view 'Edit' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Computador/Edit.aspx
+~/Views/Computador/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/Computador/Edit.cshtml
+~/Views/Computador/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2017-01-24 17:33:27,171 798811ms WebApiApplication      LogError           - The partial view 'Edit' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Computador/Edit.aspx
+~/Views/Computador/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/Computador/Edit.cshtml
+~/Views/Computador/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2017-01-24 17:33:50,006 821645ms WebApiApplication      LogError           - The partial view 'Edit' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Computador/Edit.aspx
+~/Views/Computador/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Views/Computador/Edit.cshtml
+~/Views/Computador/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+ERROR 2017-01-26 09:06:17,273 598910ms WebApiApplication      LogError           - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Departamento/Index.aspx
+~/Views/Departamento/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Departamento/Index.cshtml
+~/Views/Departamento/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+ERROR 2017-01-26 11:10:21,023 28831ms WebApiApplication      LogError           - A public action method 'PesquisaImpressoras' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.ComputadorController'.
+ERROR 2017-01-26 11:28:35,569 1123378ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressora\_Create.cshtml(15): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressoras' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressoras' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 11:28:59,142 1146950ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressora\_Create.cshtml(15): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressoras' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressoras' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 11:32:04,766 40312ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressora\_Create.cshtml(15): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressoras' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressoras' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 11:32:16,814 52359ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressora\_Create.cshtml(15): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressoras' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressoras' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 11:33:17,188 112734ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressora\_Create.cshtml(15): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressoras' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressoras' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 11:53:36,419 55180ms WebApiApplication      LogError           - DataBinding: 'ProjetoInventario.Dominio.Entidades.Departamento' não contém uma propriedade com o nome 'idEmpresa'.
+ERROR 2017-01-26 13:21:25,118 73644ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'idDepto'.
+ERROR 2017-01-26 13:47:27,029 37540ms WebApiApplication      LogError           - The model item passed into the dictionary is of type 'ProjetoInventario.Dominio.Entidades.Impressoras', but this dictionary requires a model item of type 'ProjetoInventario.Dominio.Entidades.Computador'.
+ERROR 2017-01-26 15:19:05,346 585085ms WebApiApplication      LogError           - The model item passed into the dictionary is of type 'ProjetoInventario.Dominio.Entidades.Usuarios', but this dictionary requires a model item of type 'ProjetoInventario.Dominio.Entidades.Impressoras'.
+ERROR 2017-01-26 15:21:41,261 741000ms WebApiApplication      LogError           - The model item passed into the dictionary is of type 'ProjetoInventario.Dominio.Entidades.Usuarios', but this dictionary requires a model item of type 'ProjetoInventario.Dominio.Entidades.Impressoras'.
+ERROR 2017-01-26 16:56:10,868 15252ms WebApiApplication      LogError           - A public action method 'PesquisaDepartamento' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.UsuarioController'.
+ERROR 2017-01-26 16:56:56,889 61273ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-01-26 17:00:36,645 281028ms WebApiApplication      LogError           - A public action method 'PesquisaDepartamento' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.UsuarioController'.
+ERROR 2017-01-26 17:00:45,735 290119ms WebApiApplication      LogError           - A public action method 'PesquisaDepartamento' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.UsuarioController'.
+ERROR 2017-01-26 17:01:39,215 14770ms WebApiApplication      LogError           - A public action method 'PesquisaDepartamento' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.UsuarioController'.
+ERROR 2017-01-26 22:19:53,249 2594526ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:20:37,139 2638416ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:22:18,392 2739670ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:24:51,279 2892556ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:24:59,770 2901048ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:30:19,061 18392ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Computador\_Edit.cshtml(11): error CS1061: 'ProjetoInventario.Dominio.Entidades.Computador' não contém uma definição para 'IdComputador' e nenhum método de extensão 'IdComputador' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Computador' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 22:31:07,668 66998ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Computador\_Edit.cshtml(11): error CS1061: 'ProjetoInventario.Dominio.Entidades.Computador' não contém uma definição para 'IdComputador' e nenhum método de extensão 'IdComputador' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Computador' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 22:31:19,374 78705ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Computador\_Edit.cshtml(11): error CS1061: 'ProjetoInventario.Dominio.Entidades.Computador' não contém uma definição para 'IdComputador' e nenhum método de extensão 'IdComputador' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Computador' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-26 22:33:23,331 202662ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:33:37,363 216694ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:34:02,125 241456ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-26 22:34:14,932 254263ms WebApiApplication      LogError           - The using block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+ERROR 2017-01-27 11:51:42,884 124149ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'idDepto'.
+ERROR 2017-01-27 13:42:22,156 1965001ms WebApiApplication      LogError           - DataBinding: 'ProjetoInventario.Dominio.Entidades.Computador' não contém uma propriedade com o nome 'Computador'.
+ERROR 2017-01-27 13:47:40,739 2283584ms WebApiApplication      LogError           - DataBinding: 'ProjetoInventario.Dominio.Entidades.Computador' não contém uma propriedade com o nome 'Computador'.
+ERROR 2017-01-27 17:09:08,607 260014ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-01-27 17:21:04,578 975985ms WebApiApplication      LogError           - A public action method 'Create' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.ImpressaoController'.
+ERROR 2017-01-30 09:04:51,692 40387ms WebApiApplication      LogError           - A public action method 'Create' was not found on controller 'ProjetoInventario.Apresentacao.Controllers.ImpressaoController'.
+ERROR 2017-01-30 09:33:49,036 36656ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressao\_Edit.cshtml(36): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressao' não contém uma definição para 'IP' e nenhum método de extensão 'IP' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressao' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-30 09:34:19,754 67374ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressao\_Edit.cshtml(36): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressao' não contém uma definição para 'IP' e nenhum método de extensão 'IP' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressao' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-30 09:35:37,033 144653ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressao\_Detalhe.cshtml(38): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressao' não contém uma definição para 'IP' e nenhum método de extensão 'IP' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressao' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-30 09:35:53,632 161252ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressao\_Detalhe.cshtml(38): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressao' não contém uma definição para 'IP' e nenhum método de extensão 'IP' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressao' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-30 09:35:56,999 164619ms WebApiApplication      LogError           - c:\DESENV\inventario\trunk\Fontes\ProjetoInventario.Apresentacao\Views\Impressao\_Detalhe.cshtml(38): error CS1061: 'ProjetoInventario.Dominio.Entidades.Impressao' não contém uma definição para 'IP' e nenhum método de extensão 'IP' aceita que um primeiro argumento de tipo 'ProjetoInventario.Dominio.Entidades.Impressao' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+ERROR 2017-01-30 10:08:30,445 65515ms WebApiApplication      LogError           - Erro durante a serialização ou desserialização usando JSON JavaScriptSerializer. O tamanho da cadeia de caracteres ultrapassa o valor definido na propriedade maxJsonLength.
+ERROR 2017-01-30 10:08:49,129 84199ms WebApiApplication      LogError           - Erro durante a serialização ou desserialização usando JSON JavaScriptSerializer. O tamanho da cadeia de caracteres ultrapassa o valor definido na propriedade maxJsonLength.

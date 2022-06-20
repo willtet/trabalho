@@ -1,0 +1,316 @@
+﻿
+
+<script src="/Scripts/jquery-2.1.4.js"></script>
+<script src="/Scripts/jquery-2.2.0.js"></script>
+<script src="/Scripts/jquery-2.2.3.js"></script>
+<script src="/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script src="/Scripts/select2.js"></script>
+<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/bootstrap-table.js"></script>
+<script src="/Scripts/bootstrap-table-pt-BR.js"></script>
+<script src="/Scripts/bootstrap-dialog.min.js"></script>
+<script src="/Scripts/bootstrap-toggle.js"></script>
+<script src="/Scripts/bootstrap-editable.js"></script>
+<script src="/Scripts/bootstrap-table-editable.js"></script>
+<script src="/vendor/plugins/daterange/daterangepicker.js"></script>
+<script src="/vendor/plugins/tagmanager/tagmanager.js"></script>
+<script src="/assets/js/utility/utility.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/demo.js"></script>
+<script src="/vendor/plugins/ladda/ladda.min.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/moment-with-locales.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/moment-timezone-with-data-2010-2020.min.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/bootstrap-datetimepicker.js"></script>
+<script src="/Scripts/toastr.js"></script>
+<script src="/Scripts/linq.min.js"></script>
+<script src="/Scripts/jquery.mask.js"></script>
+<script src="/Scripts/TrataDataJson.js"></script>
+<script src="/Scripts/jquery.maskMoney.js"></script>
+<script src="/Scripts/bootstrap-filestyle.js"></script>
+<script src="/Scripts/waitMe.js"></script>
+<script src="/Scripts/genericos/CarregandoLoadGif.js"></script>
+<script src="/Scripts/genericos/BotaoDireitoMouse.js"></script>
+<script src="/Scripts/genericos/NoBack.js"></script>
+<script src="/Scripts/genericos/GerarRelatorio.js"></script>
+<script src="/Scripts/jquery-migrate-1.0.0.js"></script>
+<script src="/Scripts/accounting.js"></script>
+<script src="/Scripts/numeral.js"></script>
+<script src="/Scripts/numeral-pt-br.js"></script>
+<script src="/Scripts/languages.js"></script>
+<script src="/Scripts/genericos/TrataNumerico.js"></script>
+<script src="/Scripts/timerjs.js"></script>
+<script src="/Scripts/respond.js"></script>
+<script src="/Scripts/genericos/ModalBootstrapDialog.js"></script>
+<script src="/Scripts/genericos/GerandoTipoRelatorioBase.js"></script>
+<script src="/Scripts/genericos/MetodosPadrao.js"></script>
+<script src="/Scripts/Util/CarregarDataAtual.js"></script>
+<script src="/Scripts/genericos/Ticket.js"></script>
+<script src="/Scripts/genericos/Utils.js"></script>
+
+<div class="content">
+    <div class="row col-xs-12">
+        <div class="col-md-12 filtro" style="margin-left:12px; margin-top:5px;">
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title"><i class="fa fa-search"></i>Nome do Painel</span>
+                        <span class="panel-title pull-right">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <label>Conteudo do Painel</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title"><i class="fa fa-search"></i>Exemplos de Inputs</span>
+                        <span class="panel-title pull-right">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        @*Somente números*@
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="numeros">Numeros > 0</label>
+                                <input type="text" class="texto form-control input-sm" id="numeros" name="sonumero" />
+                            </div>
+                            <script type="text/javascript">
+                                $("#numeros").maskMoney({
+                                    prefix: '',
+                                    thousands: '',
+                                    decimal: '',
+                                    precision: 0,
+                                    allowZero: false,
+                                    allowNegative: false,
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="numerosigual">Numeros >= 0</label>
+                                <input type="text" class="texto form-control input-sm" id="numerosigual" name="numerosigual" />
+                            </div>
+                            <script type="text/javascript">
+                                $("#numerosigual").maskMoney({
+                                    prefix: '',
+                                    thousands: '',
+                                    decimal: '',
+                                    precision: 0,
+                                    allowZero: true,
+                                    allowNegative: false,
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="numerosnegativo">Numeros > 0 ou < 0</label>
+                                <input type="text" class="texto form-control input-sm" id="numerosnegativo" name="numerosnegativo" />
+                            </div>
+                            <script type="text/javascript">
+                                $("#numerosnegativo").maskMoney({
+                                    prefix: '',
+                                    thousands: '',
+                                    decimal: '',
+                                    precision: 0,
+                                    allowZero: false,
+                                    allowNegative: true,
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="monetario">Numeros Monetario</label>
+                                <input type="text" class="texto form-control input-sm" id="monetario" name="monetario" />
+                            </div>
+                            <script type="text/javascript">
+                                $("#monetario").maskMoney({
+                                    prefix: 'R$',
+                                    thousands: '.',
+                                    decimal: ',',
+                                    precision: 2,
+                                    allowZero: false,
+                                    allowNegative: false,
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="decimal">Numeros decimal</label>
+                                <input type="text" class="texto form-control input-sm" id="decimal" name="decimal" />
+                            </div>
+                            <script type="text/javascript">
+
+                                $("#decimal").maskMoney({
+                                    prefix: '',
+                                    thousands: '.',
+                                    decimal: ',',
+                                    precision: 2,
+                                    allowZero: false,
+                                    allowNegative: false,
+                                });
+
+                            </script>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label class="control-label" for="selectList">Exemplo Select com texto</label>
+                                <select id="selectList" name="selectList" class="form-control input-sm"></select>
+                            </div>
+                            <script type="text/javascript">
+                                var objArray = [
+                                                 { id: 0, nome: 'Objeto 0', otherProp: '321' },
+                                                 { id: 1, nome: 'Objeto 1', otherProp: '648' },
+                                                 { id: 2, nome: 'Objeto 2', otherProp: '850' },
+                                                 { id: 3, nome: 'Objeto 3', otherProp: '046' },
+                                                 { id: 4, nome: 'Objeto 4', otherProp: '984' }
+                                ];
+
+                                montaSelectList("#selectList", objArray, "id", "nome", "Exemplo Texto Alterado");
+                            </script>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label" for="selectList2">Exemplo Select default</label>
+                                <select id="selectList2" name="selectList2" class="form-control input-sm"></select>
+                            </div>
+                            <script type="text/javascript">
+                                var objArray = [
+                                                 { id: 0, nome: 'Objeto 0', otherProp: '321' },
+                                                 { id: 1, nome: 'Objeto 1', otherProp: '648' },
+                                                 { id: 2, nome: 'Objeto 2', otherProp: '850' },
+                                                 { id: 3, nome: 'Objeto 3', otherProp: '046' },
+                                                 { id: 4, nome: 'Objeto 4', otherProp: '984' }
+                                ];
+
+                                montaSelectList("#selectList2", objArray, "id", "nome", "");
+                            </script>
+                        </div>
+                        @* Dia Mês Ano datepicker *@
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label">Dia/Mês/Ano</label>
+                                <div class='input-group' id='diaMesAno'>
+                                    <input type='text' class="form-control input-sm" />
+                                    <span class="input-group-addon input-sm">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $("#diaMesAno").datetimepicker({
+                                    locale: 'pt-br',
+                                    format: 'DD/MM/YYYY'
+                                });
+                            </script>
+                        </div>
+
+                        @* Mês Ano datepicker *@
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label">Mês/Ano</label>
+                                <div class='input-group' id='mesAno'>
+                                    <input type='text' class="form-control input-sm" />
+                                    <span class="input-group-addon input-sm">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $("#mesAno").datetimepicker({
+                                    locale: 'pt-br',
+                                    format: 'MM/YYYY'
+                                });
+                            </script>
+                        </div>
+
+                        @* Ano datepicker *@
+                        <div class="col-lg-2">
+                            <div class="form-group">
+                                <label class="control-label">Ano</label>
+                                <div class='input-group' id='ano'>
+                                    <input type='text' class="form-control input-sm" />
+                                    <span class="input-group-addon input-sm">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $("#ano").datetimepicker({
+                                    locale: 'pt-br',
+                                    format: 'YYYY'
+                                });
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title"><i class="fa fa-search"></i>Exemplos de Botões</span>
+                        <span class="panel-title pull-right">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-sm-12" style="margin-top:20px;">
+                                    <a href="javascript:void(0);" class="btn btn-success btn-sm" id="btnSalvar" title="Exemplo de botão salvar" tabindex="0">
+                                        <i class="fa fa-save"></i>&nbsp;Salvar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm" id="btnPesquisar" title="Exemplo de botão Pesquisar" tabindex="1">
+                                        <i class="fa fa-search"></i>&nbsp;Pesquisar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm" id="btnLimpar" title="Exemplo de botão Limpar" tabindex="2">
+                                        <i class="fa fa-eraser"></i>&nbsp;Limpar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-success btn-sm" id="btnAdicionar" title="Exemplo de botão Adicionar / Cadastrar" tabindex="3">
+                                        <i class="fa fa-plus"></i>&nbsp;Adicionar / Cadastrar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm" id="btnCancelar" title="Exemplo de botão Cancelar" tabindex="4">
+                                        <i class="fa fa-times"></i>&nbsp;Cancelar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-excel btn-sm" id="btnExcel" title="Exemplo de botão Excel" tabindex="5">
+                                        <i class="fa fa-file-excel-o"></i>&nbsp;Excel
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-info btn-sm" id="btnImprimir" title="Exemplo de botão Imprimir" tabindex="6">
+                                        <i class="fa fa-print"></i>&nbsp;Imprime
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm" id="btnLiberar" title="Exemplo de botão Liberar" tabindex="7">
+                                        <i class="fa fa-check"></i>&nbsp;Liberar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-info btn-sm" id="btnAtualizar" title="Exemplo de botão Atualizar" tabindex="8">
+                                        <i class="fa fa-refresh"></i>&nbsp;Atualizar
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm" id="btnLimpar" title="Exemplo de botão Excluir" tabindex="9">
+                                        <i class="fa fa-trash"></i>&nbsp;Excluir
+                                    </a>
+                                    <a href="javascript:void(0);" class="btn btn-sm" id="btnPergunta" title="Exemplo de botão Ajuda" tabindex="10">
+                                        <i class="fa fa-blue fa-question-circle fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

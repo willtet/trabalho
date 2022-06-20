@@ -1,0 +1,245 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<script>
+
+    $(".modal .currency").maskMoney({
+        prefix: 'R$',
+        thousands: '.',
+        decimal: ',',
+        precision: 2,
+        allowZero: true,
+        allowNegative: false,
+    });
+
+    function ConsultaFunc() {
+        var funcionario = {};
+        CodFuncionario = $("#hdnCodFuncionario").val();
+
+        console.log(CodFuncionario)
+
+        $.ajax({
+            url: "/Cadastro/ConsultaUmFuncionario/?codfuncionario=" + CodFuncionario,
+            type: 'GET',
+            async: false,
+            success: function (response) {
+                        console.log(response)
+                if (response.Success) {
+                    if (response.Message.length > 0) {
+                        funcionario = response.Message[0];
+                    }
+
+                } else {
+                    mensagemToastr(response);
+                }
+            }
+        });
+        debugger
+
+        if (funcionario != null) {
+            debugger
+
+            $(".modal #nome").val(funcionario.Nome);
+            $(".modal #regime").val(funcionario.RegimeD );
+            $(".modal #horario").val(funcionario.CargaHorariaD);
+            $(".modal #salario").val(funcionario.SalarioFormatado);
+            $(".modal #vt").val(funcionario.VtFormatado);
+            $(".modal #vr").val(funcionario.VrFormatado);
+            $(".modal #va").val(funcionario.VaFormatado);
+            $(".modal #medica").val(funcionario.MedicaFormatado);
+            $(".modal #odonto").val(funcionario.OdontoFormatado);
+            $(".modal #seguro").val(funcionario.SeguroVidaFormatado);
+            $(".modal #creche").val(funcionario.CrecheFormatado);
+            $(".modal #baba").val(funcionario.BabaFormatado);
+            if (funcionario.TipoD != null) {
+
+                if (funcionario.TipoD.toUpperCase() == 'CAPEX') {
+                    $(".modal #capex").click();
+                }
+
+                if (funcionario.TipoD.toUpperCase() == 'OPEX') {
+                    $(".modal #opex").click();
+                }
+            }
+        }
+    }
+
+
+    function SalvarFuncionario() {
+
+        var retorno = false;
+        var _data = {
+            "CodFuncionario": "",
+            "Nome": "",
+            "Regime": "",
+            "Tipo": "",
+            "CargaHoraria": "",
+            "Salario": "",
+            "Vt": "",
+            "Vr": "",
+            "Va": "",
+            "Medica": "",
+            "Odonto": "",
+            "Seguro": "",
+            "Creche": "",
+            "Baba": ""
+        }
+
+
+        _data.CodFuncionario = $(".modal #hdnCodFuncionario").val();
+        _data.Nome = $(".modal #nome").val();
+        _data.Regime = $(".modal #regime").val();
+        if ($(".modal #capex:checked").length > 0) {
+            _data.Tipo = "CAPEX"
+        } else {
+            _data.Tipo = "OPEX"
+        }
+        _data.CargaHoraria = $(".modal #horario").val();
+        _data.Salario = $(".modal #salario").val();
+        _data.Vt = $(".modal #vt").val();
+        _data.Vr = $(".modal #vr").val();
+        _data.Va = $(".modal #va").val();
+        _data.Medica = $(".modal #medica").val();
+        _data.Odonto = $(".modal #odonto").val();
+        _data.Seguro = $(".modal #seguro").val();
+        _data.Creche = $(".modal #creche").val();
+        _data.Baba = $(".modal #baba").val();
+
+
+
+
+        debugger
+        $.ajax({
+            url: "/Cadastro/AtualizarDadosFuncionario",
+            data: _data,
+            type: 'POST',
+            async: false,
+            success: function (response) {
+                mensagemToastr(response);
+                if (response.Success) {
+                    if (response.Message.Codigo == 0) {
+                        retorno = true;
+                    } else {
+                        retorno = false;
+                    }
+
+                } else {
+                    retorno = false;
+                }
+            },
+            error: function () {
+                retorno = false;
+            }
+        });
+        
+
+        return retorno;
+    }
+
+
+    $(function () {
+        ConsultaFunc()
+    });
+</script>
+
+<input type="hidden" id="hdnCodFuncionario" value="@ViewBag.codFuncionario" />
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Dados do funcionario</legend>
+    <div class="row dadoscli">
+        <fieldset class="col-xs-12 col-sm-6">
+            <div class="form-group">
+                <label for="nome" class="col-sm-4 control-label">Nome Funcionario</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="nome" maxlength="50" name="nome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="regime" class="col-sm-4 control-label">Regime</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="regime" maxlength="50" name="regime">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tipo" class="col-sm-4 control-label">Tipo</label>
+                <div class="col-sm-8">
+                    <label for="tipo" class="radio-inline">
+                        <input type="radio" name="tipo" id="capex" value="capex">&nbsp; CAPEX
+                    </label>
+                    <label for="social" class="radio-inline">
+                        <input type="radio" name="tipo" id="opex" value="opex">&nbsp; OPEX
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="horario" class="col-sm-4 control-label">Carga horaria</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="horario" maxlength="50" name="horario">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="salario" class="col-sm-4 control-label">Salário</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="salario" maxlength="50" name="salario">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="vt" class="col-sm-4 control-label">VT</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="vt" maxlength="50" name="vt">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="vr" class="col-sm-4 control-label">VR</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="vr" maxlength="50" name="vr">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="va" class="col-sm-4 control-label">VA</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="va" maxlength="50" name="va">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="medica" class="col-sm-4 control-label">Assistência Médica</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="medica" maxlength="50" name="medica">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="odonto" class="col-sm-4 control-label">Assistência Odontológica</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="odonto" maxlength="50" name="odonto">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="seguro" class="col-sm-4 control-label">Seguro de Vida</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="seguro" maxlength="50" name="seguro">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="creche" class="col-sm-4 control-label">Auxilio Creche</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="creche" maxlength="50" name="creche">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="baba" class="col-sm-4 control-label">Auxilio Babá</label>
+                <div class="col-sm-8">
+                    <input class="form-control currency" id="baba" maxlength="50" name="baba">
+                </div>
+            </div>
+    </div>
+
+</fieldset>
+
+@section scripts
+{
+
+    <script src="~/Scripts/ScriptsViews/Cadastro/Edicao.js?v= @(Guid.NewGuid())"></script>
+}
+

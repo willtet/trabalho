@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <div class="row col-xs-12">
+        <div class="col-md-12 filtro" style="margin-left:12px; margin-top:5px;">
+            <div class="row">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="panel-title"><i class="fa fa-search"></i>Filtrar funcionário</span>
+                        <span class="panel-title pull-right">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="nome">Nome</label>
+                                    <input type="text" class="form-control input-sm" id="nome" name="nome" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="regime">Regime</label>
+                                    <input type="text" class="form-control input-sm" id="regime" name="regime" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group">
+                                    <label class="control-label" for="tipo">Tipo</label>
+                                    <input type="text" class="form-control input-sm" id="tipo" name="tipo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group" style="float:right">
+                                    <label class="control-label" for="btnPesquisar" style="color:white">Pesqu</label>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm" id="btnPesquisar" name="btnPesquisar" title="Pesquisar" tabindex="1">
+                                        <i class="fa fa-search"></i>&nbsp;Pesquisar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel table-responsive">
+                    <div class="panel-heading">
+                        <span class="panel-title"><i class="fa fa-list"></i>&nbsp;Consulta</span>
+                        <span class="panel-title pull-right">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <table id="tblFuncionario"
+                               data-toggle="table"
+                               data-click-to-select="true"
+                               data-pagination="true"
+                               data-show-footer="false"
+                               data-multi-select="true"
+                               data-unique-id=""
+                               data-page-list="[5, 10, 20, 50, 100, 200, 500, 1000, 10000]"
+                               class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th data-field="Nome" data-align="" data-sortable="true">Nome</th>
+                                    <th data-field="RegimeD" data-align="" data-sortable="true">Regime</th>
+                                    <th data-field="TipoD" data-align="" data-sortable="true">Tipo</th>
+                                    <th data-field="Novo" data-align="" data-sortable="true">Novo</th>
+                                    <th data-field="CodFuncionario" data-align="" data-formatter="acoes">Ação</th>
+
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+
+    <script src="~/Scripts/ScriptsViews/Cadastro/Index.js?v= @(Guid.NewGuid())"></script>
+}
+
+
+

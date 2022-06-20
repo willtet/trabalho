@@ -1,0 +1,159 @@
+﻿@using System.Globalization
+@using GetSenha451.Web
+@using Dominio.Entidades
+@using Infra.Data.Repository
+@{
+    // repository
+    RecursoRepository recursoAdo = new RecursoRepository();
+    var nomeAbiente = ProjetoPadraoLideranca.Apresentacao.Util.CarregarInformacaoSistema.NomeServidor();
+
+    var user = ViewBag.User;  // PROJ71-253 - Chiprauski - 13/07/2018.
+
+    // entidade
+    Recurso _recurso = new Recurso();
+    var listaRecurso = new List<Recurso>();
+
+    if (nomeAbiente.ToUpper().Equals("CAPD1202"))
+    {
+        var modelo = new Recurso();
+        modelo.ParentName = "ModeloTelas";
+        modelo.ParentIcone = "fa-edit";
+        modelo.ParentDescr = "Modelo de tela";
+        modelo.ParentID = 999999999;
+        modelo.Nome = "Modelo";
+        modelo.Link = "Modelo";
+        modelo.DescRecurso = "Modelo";
+        modelo.Menu = 1;
+        modelo.Ordem = 1;
+
+        listaRecurso.Add(modelo);
+    }
+    
+    if(ViewBag.GetResource != null)
+    {
+        var recursosSessao = ViewBag.GetResource;  // PROJ71-247 - Chiprauski - 11/07/2018.
+        if (recursosSessao.Count == 0)
+        {
+            Response.Redirect(ViewBag.GetUrl);
+            return;
+        }
+
+        //var recursosBanco = recursoAdo.GetAll(new Recurso(), user.Login, "RecursoProc");
+        //var recursosBanco = recursoAdo.ListaRecurso(user.Login);
+
+        var recursosBanco = recursoAdo.GetAll(_recurso, user.Login, Recurso.RecursoProc);
+
+        foreach (var item in recursosBanco)
+        {
+            if (recursosSessao.Contains(item.NomeRecurso.ToUpper()))
+            {
+                listaRecurso.Add(item);
+            }
+        }
+    }
+    
+
+
+    var listaGroup = (from recurso in listaRecurso
+                      orderby recurso.ParentOrdem
+                      group recurso by new { recurso.ParentName, recurso.ParentIcone, recurso.ParentDescr, recurso.ParentID }
+                          into group1
+                          select new
+                          {
+                              parentName = group1.Key.ParentName,
+                              icone = group1.Key.ParentIcone,
+                              parenteDescr = group1.Key.ParentDescr,
+                              parentId = group1.Key.ParentID,
+                              SubGroup =
+                              from itens in group1
+                              select new
+                              {
+                                  itens.Icone,
+                                  itens.Link,
+                                  itens.Menu,
+                                  itens.NomeRecurso,
+                                  itens.Ordem,
+                                  itens.ParentID,
+                                  itens.ParentName,
+                                  itens.ParentOrdem,
+                                  itens.CodRecurso,
+                                  itens.DescRecurso,
+                                  itens.ParentDescr,
+                                  itens.ParentIcone
+                              }
+                          }).ToList();
+
+}
+
+@foreach (var item in listaGroup)
+{
+    TextInfo t = new CultureInfo("pt-BR", false).TextInfo;
+
+    <li>
+        @if (item.parentId != 0)
+        {
+            <a class="accordion-toggle" href="#">
+                <span class="fa @item.icone"></span>
+                @if (!string.IsNullOrEmpty(item.parenteDescr))
+                {
+                    <span class="sidebar-title">@t.ToTitleCase(item.parenteDescr)</span>
+                    <span class="caret"></span>
+                }
+                else
+                {
+                    <span class="sidebar-title"></span>
+                    <span class="caret"></span>
+                }
+
+            </a>
+        }
+        else
+        {
+            foreach (var sub in item.SubGroup)
+            {
+                <a href="/@sub.Link" class="dropdown-toggle">
+                    <i class="fa @sub.Icone"></i>
+                    @if (!string.IsNullOrEmpty(sub.NomeRecurso))
+                    {
+                        <span class="hidden-xs">@t.ToTitleCase(sub.NomeRecurso)</span>
+                    }
+                    else
+                    {
+                        <span class="hidden-xs"></span>
+                    }
+                </a>
+            }
+        }
+
+        @if (item.parentId != 0)
+        {
+            <ul class="nav sub-nav">
+
+                @if (User.Identity.IsAuthenticated)
+                {
+
+                    foreach (var recurso in item.SubGroup) // Usuários da lista de recursos
+                    {
+                        <li>
+                            <a href="/@recurso.Link" data-url="/@recurso.Link" class="subMenu">
+                                <span class="fa fa-circle"></span> @recurso.DescRecurso
+                            </a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    foreach (var recurso in item.SubGroup) // Usuários da lista de recursos
+                    {
+                        <li>
+                            <a href="/@recurso.Link">
+                                <span class="fa fa-circle"></span> @recurso.DescRecurso
+                            </a>
+                        </li>
+                    }
+                }
+
+            </ul>
+        }
+    </li>
+}

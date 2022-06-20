@@ -1,0 +1,153 @@
+﻿
+<script>
+
+    function ModalMensagem(mensagem, title, btnOkClass, type) {
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: mensagem,
+            buttons: [{
+                id: 'btn-fechar',
+                label: 'Fechar',
+                cssClass: 'btn-default btn-sm',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+    function ModalMensagem2(mensagem, title, btnOkClass, type) {
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: mensagem,
+            buttons: [{
+                id: 'btn-fechar',
+                label: 'Fechar',
+                cssClass: 'btn-default btn-sm',
+                action: function (dialogItself) {
+                    ChamaBaixa();
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+    function ModalMensagemConfirmShow(mensagem, title, btnOkClass, btnCancel, btnOk, type) {
+       
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: mensagem,
+            buttons: [{
+                id: 'btnFechar',
+                label: btnCancel,
+                cssClass: 'btn-default',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }, {
+                id: 'btnSalvar',
+                label: btnOk,
+                cssClass: 'btn-primary',
+                action: function (dialogItself) {
+                    ChamaBaixa();
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+
+    function ModalMensagemConfirmShowId(mensagem, title, btnOkClass, btnCancel, btnOk, type, numero) {
+
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: mensagem,
+            buttons: [{
+                id: 'btnFechar',
+                label: btnCancel,
+                cssClass: 'btn-default',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }, {
+                id: 'btnSalvar',
+                label: btnOk,
+                cssClass: 'btn-primary',
+                action: function (dialogItself) {
+                    ChamaBaixa(numero);
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+    function ModalMensagemObs(mensagem, title, btnOkClass, btnCancel, btnOk, type, numero) {
+        console.log(mensagem);
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: function (dialogRef) {
+                var $content = $('<div>' + mensagem +' <textarea rows="5" cols="75" class="txtareaobs"></textarea></div>');
+                 
+
+                return $content;
+            },
+            buttons: [{
+                id: 'btnFechar',
+                label: btnCancel,
+                cssClass: 'btn-default',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }, {
+                id: 'btnSalvar',
+                label: btnOk,
+                cssClass: 'btn-primary',
+                action: function (dialogItself) {
+                    ChamaReprovaEvento(numero);
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+
+    function ModalMensagemSpp(mensagem, title, btnOkClass, type) {
+        console.log(mensagem);
+        BootstrapDialog.show({
+            type: type,
+            title: title,
+            btnOKClass: btnOkClass,
+            message: function (dialogRef) {
+                var $content = $('<div><a href="javascript:void(0);" class="text-center" id="visualiazrSpp">' + mensagem + '</a></div>');
+                $content.on('click', { dialogRef: dialogRef }, function () {
+                    ChamaBaixa();
+                    dialogRef.close();
+                });
+
+                return $content;
+            },
+            buttons: [{
+                id: 'btn-fechar',
+                label: 'Fechar',
+                cssClass: 'btn-default btn-sm',
+                action: function (dialogItself) {
+                    dialogItself.close();
+                }
+            }]
+        });
+    }
+
+</script>
+
+
+

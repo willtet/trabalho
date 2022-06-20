@@ -1,0 +1,73 @@
+ERROR 2017-03-27 15:40:36,857 18365ms WebApiApplication      LogError           - A chave fornecida não estava presente no dicionário.
+ERROR 2017-03-27 15:43:28,821 56152ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:44:43,541 130872ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:45:18,073 165404ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:45:36,176 183507ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:45:39,752 187083ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:46:54,586 261917ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:47:15,591 282922ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:47:29,285 296615ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:48:12,127 339458ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:48:45,008 372339ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:49:05,963 393294ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:49:15,099 402430ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 15:49:52,999 440330ms WebApiApplication      LogError           - A public action method 'CarregarComboTicket' was not found on controller 'CPPRelFinanc.Apresentacao.Controllers.HomeController'.
+ERROR 2017-03-27 16:11:04,888 31890ms WebApiApplication      LogError           - A chave fornecida não estava presente no dicionário.
+ERROR 2017-03-27 17:22:36,032 98336ms WebApiApplication      LogError           - Could not find stored procedure 'cda.RecursoProc'.
+ERROR 2017-03-27 17:24:46,876 30858ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-27 17:34:46,167 630148ms WebApiApplication      LogError           - The controller for path '/ConsMapasLiberados' was not found or does not implement IController.
+ERROR 2017-03-27 17:36:40,300 744282ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-03-27 17:38:17,891 841873ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-28 09:04:51,659 56435641ms WebApiApplication      LogError           - Cannot open database "CapaDeLote" requested by the login. The login failed.
+Login failed for user 'UserCPPRelFinanc'.
+ERROR 2017-03-28 09:15:29,883 64180ms WebApiApplication      LogError           - Cannot open database "CapaDeLote" requested by the login. The login failed.
+Login failed for user 'UserCPPRelFinanc'.
+ERROR 2017-03-28 10:43:32,893 24367ms WebApiApplication      LogError           - Cannot open database "CapaDeLote" requested by the login. The login failed.
+Login failed for user 'UserCPPRelFinanc'.
+ERROR 2017-03-28 11:04:00,792 68437ms WebApiApplication      LogError           - The controller for path '/ConsMapasConferencia' was not found or does not implement IController.
+ERROR 2017-03-28 14:52:37,072 774592ms WebApiApplication      LogError           - The controller for path '/ConsMapasLiberados' was not found or does not implement IController.
+ERROR 2017-03-28 15:08:05,030 46141ms WebApiApplication      LogError           - There is no ViewData item of type 'IEnumerable<SelectListItem>' that has the key 'IDStatusAplicacao'.
+ERROR 2017-03-28 15:08:43,251 84362ms WebApiApplication      LogError           - The partial view '_Modal' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/ConsIntegraFinanc/_Modal.aspx
+~/Views/ConsIntegraFinanc/_Modal.ascx
+~/Views/Shared/_Modal.aspx
+~/Views/Shared/_Modal.ascx
+~/Views/ConsIntegraFinanc/_Modal.cshtml
+~/Views/ConsIntegraFinanc/_Modal.vbhtml
+~/Views/Shared/_Modal.cshtml
+~/Views/Shared/_Modal.vbhtml
+ERROR 2017-03-28 15:08:43,277 84388ms WebApiApplication      LogError           - The partial view '_Modal' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/ConsIntegraFinanc/_Modal.aspx
+~/Views/ConsIntegraFinanc/_Modal.ascx
+~/Views/Shared/_Modal.aspx
+~/Views/Shared/_Modal.ascx
+~/Views/ConsIntegraFinanc/_Modal.cshtml
+~/Views/ConsIntegraFinanc/_Modal.vbhtml
+~/Views/Shared/_Modal.cshtml
+~/Views/Shared/_Modal.vbhtml
+ERROR 2017-03-28 17:44:37,793 24231ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-29 09:16:28,170 55934608ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-03-29 09:16:54,783 55961221ms WebApiApplication      LogError           - The controller for path '/ConsMapasLiberados' was not found or does not implement IController.
+ERROR 2017-03-29 09:25:00,001 56446439ms WebApiApplication      LogError           - The controller for path '/ConsMapasLiberados' was not found or does not implement IController.
+ERROR 2017-03-30 16:26:54,924  3277ms WebApiApplication      LogError           - Encountered end tag "div" with no matching start tag.  Are your start/end tags properly balanced?
+
+ERROR 2017-03-31 09:23:39,859 14030ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:24:12,061 46232ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:25:11,744 105916ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:32:51,517 565689ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:33:49,091 623263ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:34:07,716 641887ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:34:27,329 661500ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:34:46,108 680280ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 09:34:56,025 690196ms WebApiApplication      LogError           - Could not find stored procedure 'RecursoProc'.
+ERROR 2017-03-31 12:02:41,319 19720ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-04-03 15:38:33,707 749911ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-04-03 15:38:37,292 753496ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-04-03 15:38:40,161 756365ms WebApiApplication      LogError           - The controller for path '/ConsMapasConferencia' was not found or does not implement IController.
+ERROR 2017-04-03 15:38:45,356 761560ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-04-03 15:39:06,029 782233ms WebApiApplication      LogError           - The controller for path '/ConsMapasConferencia' was not found or does not implement IController.
+ERROR 2017-04-03 15:44:48,988 1125192ms WebApiApplication      LogError           - The controller for path '/ConsMapasConferencia' was not found or does not implement IController.
+ERROR 2017-04-04 09:10:47,075 56007584ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-04-05 11:46:28,234 397804ms WebApiApplication      LogError           - Não autenticado
+ERROR 2017-04-07 15:25:40,960 625227ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.
+ERROR 2017-04-10 17:16:26,888 828295ms WebApiApplication      LogError           - The controller for path '/ConsIntervaloMapas' was not found or does not implement IController.

@@ -1,0 +1,135 @@
+﻿@using ProjetoPadraoLideranca.Apresentacao.Controllers
+@using ProjetoPadraoLideranca.Dominio.Entidades
+@model HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+    var tipoError = TempData["TipoError"];
+    
+    var getSenha = new Lidercap.Auth.GetSenha();
+    var login = getSenha.GetUser().Login;
+}
+<style type="text/css">
+    .error-title {
+        font-size: 140px;
+        font-weight: 800;
+        color: #4a89dc;
+        text-align: center;
+        line-height: 120px;
+    }
+
+    .error-subtitle {
+        font-weight: 400;
+        text-align: center;
+        font-size: 40px;
+        color: #AAA;
+    }
+</style>
+
+<!-- Start: Topbar -->
+<header id="topbar">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="/Home">Error</a>
+            </li>
+            <li class="crumb-link">
+                <a href="/Home">Página de Error</a>
+            </li>
+        </ol>
+    </div>
+</header>
+<!-- End: Topbar -->
+
+<div id="content">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <span class="panel-title">Tipo de Error: Inventário</span>
+                    <span class="panel-title pull-right">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <!-- Begin: Content -->
+                    <section class="error-page sb-l-o sb-r-c pn">
+                        <div class="center-block mt50 mw800">
+                            <h1 class="error-title"> @Html.Raw(tipoError)! </h1>
+                            <h2 class="error-subtitle">Página não encontrada.</h2>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <span class="panel-title">Descrição do Error: Incentivo</span>
+                    <span class="panel-title pull-right">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <!-- Begin: Content -->
+                    <section class="error-page sb-l-o sb-r-c pn">
+                        <div class="mid-section clearfix">
+                            <div class="form-group CorLabel">
+                                @if (tipoError != null)
+                                {
+                                    <h4>Tipo do Error:</h4>
+                                    @Html.Raw(tipoError)
+
+                                    var paramtroLog = new ResultLoteriaLog
+                                    {
+                                        DtLog = DateTime.Now,
+                                        Usuario = login,
+                                        Descricao = "SISTEMA: " + Model.Exception.Source,
+                                        Codigo = Convert.ToInt32(tipoError),
+                                        Origem = "SISTEMA: " + Model.ControllerName,
+                                        Mensagem = Model.Exception.StackTrace
+                                    };
+
+                                    //LogSorteioController.GravarLogIncentivo(paramtroLog);
+                                }
+                                else
+                                {
+                                    var paramtroLog = new ResultLoteriaLog
+                                    {
+                                        DtLog = DateTime.Now,
+                                        Usuario = login,
+                                        Descricao = "SISTEMA: " + Model.Exception.Source,
+                                        Codigo = Convert.ToInt32(tipoError),
+                                        Origem = "SISTEMA: " + Model.ControllerName,
+                                        Mensagem = Model.Exception.StackTrace
+                                    };
+
+                                    //LogSorteioController.GravarLogIncentivo(paramtroLog);
+                                }
+                                
+                                <h4>ActionName:</h4>
+                                @Html.Raw(@Model.ActionName);
+                                <h4>ControllerName:</h4>
+                                @Html.Raw(@Model.ControllerName);
+                                <h4>Messagem:</h4>
+                                @Html.Raw(@Model.Exception.Message);
+                                <h4>Source: </h4>
+                                @Html.Raw(@Model.Exception.Source);
+                                <h4>StackTrace: </h4>
+                                @Html.Raw(@Model.Exception.StackTrace);
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
