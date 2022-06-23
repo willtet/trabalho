@@ -1,6 +1,7 @@
 ﻿using ProjetoPadraoLideranca.Apresentacao.Util;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using VendaTsdigital.Dominio.Entidades;
 using VendaTsdigital.Infra.Data.Repository;
@@ -26,13 +27,32 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
         {
             try
             {
-                FuncionarioRepository repository = new FuncionarioRepository();
-                Funcionario resposta = new Funcionario();
-                resposta = repository.AtualizaListaCadastro();
+                //FuncionarioRepository repository = new FuncionarioRepository();
+                //Funcionario resposta = new Funcionario();
+                //resposta = repository.AtualizaListaCadastro();
 
-                JsonResult jr = Json(new RetornoJson().Retorno(true, resposta, 0), JsonRequestBehavior.AllowGet);
-                jr.MaxJsonLength = int.MaxValue;
-                return jr;
+                //JsonResult jr = Json(new RetornoJson().Retorno(true, resposta, 0), JsonRequestBehavior.AllowGet);
+                //jr.MaxJsonLength = int.MaxValue;
+                //return jr;
+
+                //Puxa os dados da base JIRA
+                FuncionarioRepository repository = new FuncionarioRepository();
+                List<Funcionario> listaNova = new List<Funcionario>();
+                List<Funcionario> listaAtual = new List<Funcionario>();
+                listaNova = repository.BaixarListaAtualizadaFuncionProc();
+                listaAtual = repository.ListarAtualFuncionProc();
+
+                if(listaAtual.Count() == 0)
+                {
+                    repository.AdicionarNovosFuncionarios(listaNova);
+                }
+                else
+                {
+
+                }
+
+
+
             }
             catch (Exception e)
             {
@@ -50,9 +70,17 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
             {
                 FuncionarioRepository repository = new FuncionarioRepository();
                 List<Funcionario> retorno = new List<Funcionario>();
-                retorno = repository.ConsultarFuncionarios(Nome, Regime, Tipo);
+                retorno = repository.ConsultarFuncionarios();
 
-                JsonResult jr = Json(new RetornoJson().Retorno(true, retorno, 0), JsonRequestBehavior.AllowGet);
+                List<Funcionario> filteredList = retorno.Where(f => 
+                                                                    f.Nome.Contains((Nome == "" | Nome == null) ? "" : Nome) &&
+                                                                    f.RegimeD.Contains((Regime == "" | Regime == null) ? "" : Regime) &&
+                                                                    f.TipoD.Contains((Tipo == "" | Tipo == null) ? "" : Tipo)
+
+                                                                ).ToList();
+
+
+                JsonResult jr = Json(new RetornoJson().Retorno(true, filteredList, 0), JsonRequestBehavior.AllowGet);
                 jr.MaxJsonLength = int.MaxValue;
                 return jr;
             }

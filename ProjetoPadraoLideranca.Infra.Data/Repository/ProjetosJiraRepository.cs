@@ -3,6 +3,7 @@ using Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,19 +40,27 @@ namespace VendaTsdigital.Infra.Data.Repository
             }
         }
 
-        public void Teste(DataTable funcTable, DataTable projTable)
+        public void GerarResultado(DataTable funcTable, DataTable projTable)
         {
-            try
+            
+
+            using (var con = new SqlConnection(StrConnection))
             {
-                var param = new DynamicParameters();
-                param.Add("@TblProjetos", projTable);
-                param.Add("@TblFuncionarios", funcTable);
-                this.Get(new ProjetosJira(), param, ProjetosJira.ListaProjetoFuncionarioResultProc);
-            }
-            catch (Exception e)
-            {
-                throw e;
+                con.Open();
+                using (var cmd = new SqlCommand(ProjetosJira.GerarProjetoFuncionarioResultProc, con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@TblProjetos", projTable);
+                    cmd.Parameters.AddWithValue("@TblFuncionarios", funcTable);
+
+                    cmd.CommandTimeout = 0;
+                    SqlDataReader rs = cmd.ExecuteReader();
+                }
             }
         }
+
+        
+
+
     }
 }

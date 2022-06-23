@@ -3,6 +3,52 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<script src="/Scripts/jquery-2.1.4.js"></script>
+<script src="/Scripts/jquery-2.2.0.js"></script>
+<script src="/Scripts/jquery-2.2.3.js"></script>
+<script src="/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script src="/Scripts/select2.js"></script>
+<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/bootstrap-table.js"></script>
+<script src="/Scripts/bootstrap-table-pt-BR.js"></script>
+<script src="/Scripts/bootstrap-dialog.min.js"></script>
+<script src="/Scripts/bootstrap-toggle.js"></script>
+<script src="/Scripts/bootstrap-editable.js"></script>
+<script src="/Scripts/bootstrap-table-editable.js"></script>
+<script src="/vendor/plugins/daterange/daterangepicker.js"></script>
+<script src="/vendor/plugins/tagmanager/tagmanager.js"></script>
+<script src="/assets/js/utility/utility.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/demo.js"></script>
+<script src="/vendor/plugins/ladda/ladda.min.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/moment-with-locales.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/moment-timezone-with-data-2010-2020.min.js"></script>
+<script src="/Scripts/bootstrap-datetimepicker.min/bootstrap-datetimepicker.js"></script>
+<script src="/Scripts/toastr.js"></script>
+<script src="/Scripts/linq.min.js"></script>
+<script src="/Scripts/jquery.mask.js"></script>
+<script src="/Scripts/TrataDataJson.js"></script>
+<script src="/Scripts/jquery.maskMoney.js"></script>
+<script src="/Scripts/bootstrap-filestyle.js"></script>
+<script src="/Scripts/waitMe.js"></script>
+<script src="/Scripts/genericos/CarregandoLoadGif.js"></script>
+<script src="/Scripts/genericos/BotaoDireitoMouse.js"></script>
+<script src="/Scripts/genericos/NoBack.js"></script>
+<script src="/Scripts/genericos/GerarRelatorio.js"></script>
+<script src="/Scripts/jquery-migrate-1.0.0.js"></script>
+<script src="/Scripts/accounting.js"></script>
+<script src="/Scripts/numeral.js"></script>
+<script src="/Scripts/numeral-pt-br.js"></script>
+<script src="/Scripts/languages.js"></script>
+<script src="/Scripts/genericos/TrataNumerico.js"></script>
+<script src="/Scripts/timerjs.js"></script>
+<script src="/Scripts/respond.js"></script>
+<script src="/Scripts/genericos/ModalBootstrapDialog.js"></script>
+<script src="/Scripts/genericos/GerandoTipoRelatorioBase.js"></script>
+<script src="/Scripts/genericos/MetodosPadrao.js"></script>
+<script src="/Scripts/Util/CarregarDataAtual.js"></script>
+<script src="/Scripts/genericos/Ticket.js"></script>
+<script src="/Scripts/genericos/Utils.js"></script>
 
 <div class="content">
     <div class="row col-xs-12">
@@ -27,27 +73,32 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label class="control-label" for="">Regime</label>
-                                    <input type="text" class="form-control input-sm" id="" name="" />
+                                    <label class="control-label" for="regime">Regime</label>
+                                    <input type="text" class="form-control input-sm" id="regime" name="regime" />
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="form-group">
-                                    <label class="control-label" for="">Mês</label>
-                                    <input type="text" class="form-control input-sm" id="" name="" />
+                                    <label class="control-label">Mês/Ano</label>
+                                    <div class='input-group' id='mesAno'>
+                                        <input type='text' class="form-control input-sm" />
+                                        <span class="input-group-addon input-sm">
+                                            <span class="fa fa-calendar"></span>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="form-group">
-                                    <label class="control-label" for="">Ano</label>
-                                    <input type="text" class="form-control input-sm" id="" name="" />
-                                </div>
+                                <script type="text/javascript">
+                                    $("#mesAno").datetimepicker({
+                                        locale: 'pt-br',
+                                        format: 'MM/YYYY'
+                                    });
+                                </script>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="form-group" style="float:right">
-                                    <label class="control-label" for="btnPesquisar" style="color:white">Pesqu</label>
+                                    
                                     <a href="javascript:void(0);" class="btn btn-primary btn-sm" id="btnPesquisar" name="btnPesquisar" title="Pesquisar" tabindex="1">
                                         <i class="fa fa-search"></i>&nbsp;Pesquisar
                                     </a>
@@ -68,6 +119,12 @@
                         </span>
                     </div>
                     <div class="panel-body">
+                        <div class="form-group" style="float:right">
+                            <a href="javascript:void(0);" class="btn btn-excel btn-sm" id="btnExcel" title="Exemplo de botão Excel" tabindex="6">
+                                <i class="fa fa-file-excel-o"></i>&nbsp;Excel
+                            </a>
+                        </div>
+                        
                         <table id="tblResultado"
                                data-toggle="table"
                                data-click-to-select="true"
@@ -79,35 +136,35 @@
                                class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th data-field="" data-align="" data-sortable="true">Projeto</th>
-                                    <th data-field="" data-align="" data-sortable="true">Regime</th>
-                                    <th data-field="" data-align="" data-sortable="true">Horas lançadas</th>
-                                    <th data-field="" data-align="" data-sortable="true">Dias Úteis</th>
-                                    <th data-field="" data-align="" data-sortable="true">Horario Util</th>
-                                    <th data-field="" data-align="" data-sortable="true">Mês</th>
-                                    <th data-field="" data-align="" data-sortable="true">Ano</th>
-                                    <th data-field="" data-align="" data-sortable="true">Ass. e Consul. - Pj</th>
-                                    <th data-field="" data-align="" data-sortable="true">Salarios e Ordenados</th>
-                                    <th data-field="" data-align="" data-sortable="true">Horas Extras Normais</th>
-                                    <th data-field="" data-align="" data-sortable="true">Ferias</th>
-                                    <th data-field="" data-align="" data-sortable="true">Prov. 13 Salário</th>
-                                    <th data-field="" data-align="" data-sortable="true">INSS</th>
-                                    <th data-field="" data-align="" data-sortable="true">INSS Prov. Ferias</th>
-                                    <th data-field="" data-align="" data-sortable="true">INSS Prov. 13</th>
-                                    <th data-field="" data-align="" data-sortable="true">FGTS</th>
-                                    <th data-field="" data-align="" data-sortable="true">FGTS Prov. Ferias</th>
-                                    <th data-field="" data-align="" data-sortable="true">FGTS Prov. 13</th>
-                                    <th data-field="" data-align="" data-sortable="true">Assist. Med.</th>
-                                    <th data-field="" data-align="" data-sortable="true">Assist. Odonto.</th>
-                                    <th data-field="" data-align="" data-sortable="true">Fundo De Pensão</th>
-                                    <th data-field="" data-align="" data-sortable="true">Taxa Adm. Fundo De Pensão</th>
-                                    <th data-field="" data-align="" data-sortable="true">Seguro De Vida Em Grupo</th>
-                                    <th data-field="" data-align="" data-sortable="true">Vale Transporte</th>
-                                    <th data-field="" data-align="" data-sortable="true">Vale Refeição</th>
-                                    <th data-field="" data-align="" data-sortable="true">Cesta Básica</th>
-                                    <th data-field="" data-align="" data-sortable="true">Auxilio Creche</th>
-                                    <th data-field="" data-align="" data-sortable="true">Vale Alimentação</th>
-                                    <th data-field="" data-align="" data-sortable="true">Auxilio Baba</th>
+                                    <th data-field="Nome" data-align="" data-sortable="true">Projeto</th>
+                                    <th data-field="Regime" data-align="" data-sortable="true">Regime</th>
+                                    <th data-field="Horas" data-align="" data-sortable="true">Horas lançadas</th>
+                                    <th data-field="DiaUtil" data-align="" data-sortable="true">Dias Úteis</th>
+                                    <th data-field="HoraUtil" data-align="" data-sortable="true">Horario Util</th>
+                                    <th data-field="Mes" data-align="" data-sortable="true">Mês</th>
+                                    <th data-field="Ano" data-align="" data-sortable="true">Ano</th>
+                                    <th data-field="AssessoriaConsultaPJ" data-align="" data-sortable="true">Ass. e Consul. - Pj</th>
+                                    <th data-field="SalarioOrdenado" data-align="" data-sortable="true">Salarios e Ordenados</th>
+                                    <th data-field="HoraExtra" data-align="" data-sortable="true">Horas Extras Normais</th>
+                                    <th data-field="Ferias" data-align="" data-sortable="true">Ferias</th>
+                                    <th data-field="DecimoTerceiroProvisao" data-align="" data-sortable="true">Prov. 13 Salário</th>
+                                    <th data-field="INSS" data-align="" data-sortable="true">INSS</th>
+                                    <th data-field="INSSProvisaoFerias" data-align="" data-sortable="true">INSS Prov. Ferias</th>
+                                    <th data-field="INSSProvisaoDecimoTerceiro" data-align="" data-sortable="true">INSS Prov. 13</th>
+                                    <th data-field="FGTS" data-align="" data-sortable="true">FGTS</th>
+                                    <th data-field="FGTSProvisaoFerias" data-align="" data-sortable="true">FGTS Prov. Ferias</th>
+                                    <th data-field="FGTSProvisaoDecimoTerceiro" data-align="" data-sortable="true">FGTS Prov. 13</th>
+                                    <th data-field="Medica" data-align="" data-sortable="true">Assist. Med.</th>
+                                    <th data-field="Odonto" data-align="" data-sortable="true">Assist. Odonto.</th>
+                                    <th data-field="Pensao" data-align="" data-sortable="true">Fundo De Pensão</th>
+                                    <th data-field="TaxaAdmPensao" data-align="" data-sortable="true">Taxa Adm. Fundo De Pensão</th>
+                                    <th data-field="Seguro" data-align="" data-sortable="true">Seguro De Vida Em Grupo</th>
+                                    <th data-field="Vt" data-align="" data-sortable="true">Vale Transporte</th>
+                                    <th data-field="Vr" data-align="" data-sortable="true">Vale Refeição</th>
+                                    <th data-field="Cesta" data-align="" data-sortable="true">Cesta Básica</th>
+                                    <th data-field="Creche" data-align="" data-sortable="true">Auxilio Creche</th>
+                                    <th data-field="Va" data-align="" data-sortable="true">Vale Alimentação</th>
+                                    <th data-field="Baba" data-align="" data-sortable="true">Auxilio Baba</th>
 
                                 </tr>
                             </thead>

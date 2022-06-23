@@ -19,14 +19,12 @@
         var funcionario = {};
         CodFuncionario = $("#hdnCodFuncionario").val();
 
-        console.log(CodFuncionario)
 
         $.ajax({
             url: "/Cadastro/ConsultaUmFuncionario/?codfuncionario=" + CodFuncionario,
             type: 'GET',
             async: false,
             success: function (response) {
-                        console.log(response)
                 if (response.Success) {
                     if (response.Message.length > 0) {
                         funcionario = response.Message[0];
@@ -43,17 +41,16 @@
             debugger
 
             $(".modal #nome").val(funcionario.Nome);
-            $(".modal #regime").val(funcionario.RegimeD );
-            $(".modal #horario").val(funcionario.CargaHorariaD);
-            $(".modal #salario").val(funcionario.SalarioFormatado);
-            $(".modal #vt").val(funcionario.VtFormatado);
-            $(".modal #vr").val(funcionario.VrFormatado);
-            $(".modal #va").val(funcionario.VaFormatado);
-            $(".modal #medica").val(funcionario.MedicaFormatado);
-            $(".modal #odonto").val(funcionario.OdontoFormatado);
-            $(".modal #seguro").val(funcionario.SeguroVidaFormatado);
-            $(".modal #creche").val(funcionario.CrecheFormatado);
-            $(".modal #baba").val(funcionario.BabaFormatado);
+            if (funcionario.RegimeD != null) {
+
+                if (funcionario.RegimeD.toUpperCase() == 'CLT') {
+                    $(".modal #clt").click();
+                }
+
+                if (funcionario.RegimeD.toUpperCase() == 'PJ') {
+                    $(".modal #pj").click();
+                }
+            }
             if (funcionario.TipoD != null) {
 
                 if (funcionario.TipoD.toUpperCase() == 'CAPEX') {
@@ -64,6 +61,17 @@
                     $(".modal #opex").click();
                 }
             }
+            $(".modal #horario").val(funcionario.CargaHorariaD);
+            $(".modal #salario").val(funcionario.SalarioFormatado);
+            $(".modal #vt").val(funcionario.VtFormatado);
+            $(".modal #vr").val(funcionario.VrFormatado);
+            $(".modal #va").val(funcionario.VaFormatado);
+            $(".modal #medica").val(funcionario.MedicaFormatado);
+            $(".modal #odonto").val(funcionario.OdontoFormatado);
+            $(".modal #seguro").val(funcionario.SeguroVidaFormatado);
+            $(".modal #creche").val(funcionario.CrecheFormatado);
+            $(".modal #baba").val(funcionario.BabaFormatado);
+            
         }
     }
 
@@ -91,7 +99,11 @@
 
         _data.CodFuncionario = $(".modal #hdnCodFuncionario").val();
         _data.Nome = $(".modal #nome").val();
-        _data.Regime = $(".modal #regime").val();
+        if ($(".modal #clt:checked").length > 0) {
+            _data.Regime = "CLT"
+        } else {
+            _data.Regime = "PJ"
+        }
         if ($(".modal #capex:checked").length > 0) {
             _data.Tipo = "CAPEX"
         } else {
@@ -159,16 +171,21 @@
             <div class="form-group">
                 <label for="regime" class="col-sm-4 control-label">Regime</label>
                 <div class="col-sm-8">
-                    <input class="form-control" id="regime" maxlength="50" name="regime">
+                    <label for="clt" class="radio-inline">
+                        <input type="radio" name="regime" id="clt" value="CLT">&nbsp; CLT
+                    </label>
+                    <label for="pj" class="radio-inline">
+                        <input type="radio" name="regime" id="pj" value="PJ">&nbsp; PJ
+                    </label>
                 </div>
             </div>
             <div class="form-group">
-                <label for="tipo" class="col-sm-4 control-label">Tipo</label>
+                <label for="capex" class="col-sm-4 control-label">Tipo</label>
                 <div class="col-sm-8">
                     <label for="tipo" class="radio-inline">
                         <input type="radio" name="tipo" id="capex" value="capex">&nbsp; CAPEX
                     </label>
-                    <label for="social" class="radio-inline">
+                    <label for="opex" class="radio-inline">
                         <input type="radio" name="tipo" id="opex" value="opex">&nbsp; OPEX
                     </label>
                 </div>

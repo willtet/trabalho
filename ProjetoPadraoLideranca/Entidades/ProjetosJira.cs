@@ -10,7 +10,8 @@ namespace VendaTsdigital.Dominio.Entidades
     {
         public static string ConsultaProjetosJira = "ConsultaProjetosJiraProc";
         public static string ConsultaNomeProjetosProc = "ConsultaNomeProjetosProc";
-        public static string ListaProjetoFuncionarioResultProc = "ListaProjetoFuncionarioResultProc";
+        public static string GerarProjetoFuncionarioResultProc = "GerarProjetoFuncionarioResultProc";
+        
 
 
         public int AnoCriacao { get; set; }

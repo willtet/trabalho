@@ -8,6 +8,8 @@ namespace VendaTsdigital.Dominio.Entidades
 {
     public class RelatorioJira
     {
+		public static string PesquisarProjetosJira = "PesquisarProjetosJira";
+
 		public string Nome{get; set;} 
 		public string Regime{get; set;} 
 		public string Horas{get; set;} 

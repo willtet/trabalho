@@ -15,6 +15,9 @@ namespace VendaTsdigital.Dominio.Entidades
         public static string ConsultaFuncProc = "ConsultaFuncProc";
         public static string AtualizaListaFuncProc = "AtualizaListaFuncProc";
         public static string InsereDadosFuncProc = "InsereDadosFuncProc";
+        public static string BaixarListaAtualizadaFuncionProc = "BaixarListaAtualizadaFuncionProc";
+        public static string ListarAtualFuncionProc = "ListarAtualFuncionProc";
+
 
         public int CodFuncionario { get; set; }
         public string Nome { get; set; }
@@ -40,7 +43,7 @@ namespace VendaTsdigital.Dominio.Entidades
         public string Salario { get; set; }
         public decimal SalarioD
         {
-            get { return Convert.ToDecimal((Salario != null & Salario != "") ? CrytoUtil.Decrypt(Salario) : "")/100 ; }
+            get { return Convert.ToDecimal((Salario != null & Salario != "") ? CrytoUtil.Decrypt(Salario) : "0")/100 ; }
         }
 
         public string SalarioFormatado {
@@ -114,6 +117,14 @@ namespace VendaTsdigital.Dominio.Entidades
             }
         }
         public bool Novo { get; set; }
+
+        public bool Ativo { get; set; }
+
+
+
+
+        public string NomeBase { get; set; }
+        public string ApelidoBase { get; set; }
 
 
         public string DinheiroFormatado(string encrypt)

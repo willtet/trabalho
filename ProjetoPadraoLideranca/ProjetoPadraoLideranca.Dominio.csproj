@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\ConsultaJira.cs" />
+    <Compile Include="Entidades\dtos\FuncionarioDto.cs" />
+    <Compile Include="Entidades\dtos\ProjetosJiraDto.cs" />
     <Compile Include="Entidades\ProjetosJira.cs" />
     <Compile Include="Entidades\Funcionario.cs" />
     <Compile Include="Entidades\Recurso.cs" />

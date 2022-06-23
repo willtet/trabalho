@@ -18,7 +18,6 @@
         }
     });
 
-    console.log(funcionario)
 
     if (funcionario != null) {
 

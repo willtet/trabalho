@@ -9,16 +9,16 @@ namespace VendaTsdigital.Dominio.Utils
     public class CalculoUtil
     {
 
-        private string itipo = "CAPEX";
-        private decimal vferias = 11.11m;
-        private decimal vtreze = 8.33m;
-        private decimal vinss = 29.2m;
-        private decimal vfgts = 8.0m;
-        private decimal salarioAuxiliar;
 
-
-        public decimal calcula(int iop, decimal salario, decimal horaUtilMes, decimal horaLancada, string tipoRegime, string tipoCapexOpex)
+        public static decimal calcula(int iop, decimal salario, decimal horaUtilMes, decimal horaLancada, string tipoRegime, string tipoCapexOpex)
         {
+             string itipo = "CAPEX";
+             decimal vferias = 11.11m;
+             decimal vtreze = 8.33m;
+             decimal vinss = 29.2m;
+             decimal vfgts = 8.0m;
+             decimal salarioAuxiliar;
+
             itipo = tipoCapexOpex.ToUpper();
             salarioAuxiliar = salario;
             decimal resultado;
@@ -168,7 +168,7 @@ namespace VendaTsdigital.Dominio.Utils
         }
 
 
-        public double diasUteis(int year, int month)
+        public static double diasUteis(int year, int month)
         {
             //DateTime date = DateTime.Now;
             var firstDayOfMonth = new DateTime(year, month, 1);
@@ -181,7 +181,7 @@ namespace VendaTsdigital.Dominio.Utils
             return calcBusinessDays;
         }
 
-        public double horaUtil(double horaDeTrabalho, int ano, int mes)
+        public static double horaUtil(double horaDeTrabalho, int ano, int mes)
         {
             return horaDeTrabalho * diasUteis(ano, mes);
         }

@@ -16,21 +16,6 @@ namespace VendaTsdigital.Infra.Data.Repository
             {
                 var param = new DynamicParameters();
 
-                if (!string.IsNullOrEmpty(nome))
-                {
-                    param.Add("@nome", nome);
-                }
-
-                if (!String.IsNullOrEmpty(regime))
-                {
-                    param.Add("@regime", regime);
-                }
-
-                if (!String.IsNullOrEmpty(tipo))
-                {
-                    param.Add("@tipo", tipo);
-                }
-
                 return this.GetAll(new Funcionario(), param, Funcionario.ConsultaFuncProc).ToList();
             }
             catch (Exception e)
@@ -65,6 +50,45 @@ namespace VendaTsdigital.Infra.Data.Repository
                 }
 
                 return this.GetAll(new Funcionario(), param, Funcionario.ConsultaFuncProc).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public void AdicionarNovosFuncionarios(List<Funcionario> listaNova)
+        {
+            try
+            {
+                this.Update(new Funcionario(), null,Funcionario.ListarAtualFuncionProc))
+                this.GetAll(new Funcionario(), Funcionario.ListarAtualFuncionProc).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public List<Funcionario> ListarAtualFuncionProc()
+        {
+            try
+            {
+
+                return this.GetAll(new Funcionario(), Funcionario.ListarAtualFuncionProc).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public List<Funcionario> BaixarListaAtualizadaFuncionProc()
+        {
+            try
+            {
+
+                return this.GetAll(new Funcionario(), Funcionario.BaixarListaAtualizadaFuncionProc).ToList();
             }
             catch (Exception e)
             {

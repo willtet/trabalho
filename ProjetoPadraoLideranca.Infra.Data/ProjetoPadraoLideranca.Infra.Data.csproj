@@ -80,6 +80,7 @@
     <Compile Include="Repository\DynamicRepository.cs" />
     <Compile Include="Repository\FuncionarioRepository.cs" />
     <Compile Include="Repository\RecursoRepository.cs" />
+    <Compile Include="Repository\RelatorioJiraRepository.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -22,17 +22,11 @@ function AtualizaListaCadastro() {
 function ListarFunc() {
     $('#tblFuncionario').hide();
     $('#tblFuncionario').bootstrapTable('destroy')
-    var _data = { IdPromocao: "", CodEvento: "", DataInicio: "", DataFim: "" };
-    _data.IdPromocao = $("#nome").val();
-    _data.DataInicio = $("#Inicio").val();
-    _data.DataFim = $("#Fim").val();
 
     $.ajax({
         url: '/Cadastro/Consultar',
         type: 'GET',
-        data: _data,
         success: function (response) {
-            console.log(response.Message)
             if (response.Success) {
                 $("#tblFuncionario").bootstrapTable({ data: response.Message });
                 $("#tblFuncionario").show();
@@ -44,7 +38,6 @@ function ListarFunc() {
 }
 
 function acoes(value, row) {
-    console.log(row)
     var html = '<div class="col-xs-12">';
 
     html += '<div class="col-xs-4">';
@@ -58,7 +51,6 @@ function acoes(value, row) {
 $('html').on('click', '.editar', function () {
     var codFunc = $(this).data().codfuncionario;
 
-    console.log($(this).data());
     BootstrapDialog.show({
         title: 'Editar Funcionario',
         message: $('<form id="frmEditar" data-toggle="validator" role="form" class="form-horizontal"></form>').load("/Cadastro/Edicao?codFuncionario=" + codFunc),
@@ -90,3 +82,37 @@ $('html').on('click', '.editar', function () {
     });
 
 });
+
+
+$("#btnPesquisar").click(function () {
+    ConsultarResultadoProjeto()
+});
+
+function ConsultarResultadoProjeto() {
+    var _data = { nome: "", regime: "", tipo: "" }
+
+    _data.nome = $("#nome").val();
+    _data.regime = $("#regime").val();
+    _data.tipo = $("#tipo").val();
+    debugger
+
+    $("#tblFuncionario").hide();
+    $("#tblFuncionario").bootstrapTable('destroy')
+    $.ajax({
+        url: '/Cadastro/Consultar',
+        type: 'GET',
+        data: _data,
+        success: function (response) {
+            if (response.Success) {
+                $("#tblFuncionario").bootstrapTable({ data: response.Message });
+                $("#tblFuncionario").show();
+
+                $("#nome").val('');
+                $("#regime").val('');
+                $("#tipo").val('')
+            } else {
+                mensagemToastr(response);
+            }
+        }
+    });
+}
