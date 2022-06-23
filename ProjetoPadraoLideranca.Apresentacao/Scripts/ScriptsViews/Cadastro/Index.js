@@ -2,7 +2,7 @@
 
 $(function () {
     AtualizaListaCadastro();
-    ListarFunc();
+    
 });
 
 
@@ -13,7 +13,7 @@ function AtualizaListaCadastro() {
         url: '/Cadastro/AtualizaListaCadastro',
         type: 'GET',
         success: function (response) {
-            console.log(response)
+            ListarFunc();
         }
     });
 }

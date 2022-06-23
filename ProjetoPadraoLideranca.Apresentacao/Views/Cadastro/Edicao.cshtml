@@ -40,7 +40,7 @@
         if (funcionario != null) {
             debugger
 
-            $(".modal #nome").val(funcionario.Nome);
+            $(".modal #nome").val(funcionario.NomeD);
             if (funcionario.RegimeD != null) {
 
                 if (funcionario.RegimeD.toUpperCase() == 'CLT') {
@@ -182,11 +182,11 @@
             <div class="form-group">
                 <label for="capex" class="col-sm-4 control-label">Tipo</label>
                 <div class="col-sm-8">
-                    <label for="tipo" class="radio-inline">
-                        <input type="radio" name="tipo" id="capex" value="capex">&nbsp; CAPEX
+                    <label for="capex" class="radio-inline">
+                        <input type="radio" name="capex" id="capex" value="capex">&nbsp; CAPEX
                     </label>
                     <label for="opex" class="radio-inline">
-                        <input type="radio" name="tipo" id="opex" value="opex">&nbsp; OPEX
+                        <input type="radio" name="opex" id="opex" value="opex">&nbsp; OPEX
                     </label>
                 </div>
             </div>

@@ -2,8 +2,11 @@
 using Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using VendaTsdigital.Dominio.Entidades;
+using VendaTsdigital.Dominio.Entidades.dtos;
 using VendaTsdigital.Dominio.Interfaces;
 
 namespace VendaTsdigital.Infra.Data.Repository
@@ -57,16 +60,27 @@ namespace VendaTsdigital.Infra.Data.Repository
             }
         }
 
-        public void AdicionarNovosFuncionarios(List<Funcionario> listaNova)
+        public void AdicionarNovosFuncionarios(DataTable listaFuncionario)
         {
-            try
+            using (var con = new SqlConnection(StrConnection))
             {
-                this.Update(new Funcionario(), null,Funcionario.ListarAtualFuncionProc))
-                this.GetAll(new Funcionario(), Funcionario.ListarAtualFuncionProc).ToList();
-            }
-            catch (Exception e)
-            {
-                throw e;
+                con.Open();
+                using (var cmd = new SqlCommand(Funcionario.InserirListaFuncionariosProc, con))
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@TblFuncionarios", listaFuncionario);
+
+                        cmd.CommandTimeout = 0;
+                        SqlDataReader rs = cmd.ExecuteReader();
+                    }
+                    catch (Exception e)
+                    {
+
+                        throw;
+                    }
+                }
             }
         }
 
@@ -107,7 +121,7 @@ namespace VendaTsdigital.Infra.Data.Repository
                 string cpf = string.Empty;
 
                 parameters.Add("@CodFuncionario", CodFuncionario);
-                parameters.Add("@nome", Nome);
+                parameters.Add("@nome", CrytoUtil.Encrypt(Nome));
                 parameters.Add("@regime", CrytoUtil.Encrypt(Regime));
                 parameters.Add("@tipo", CrytoUtil.Encrypt(Tipo));
                 parameters.Add("@carga", CrytoUtil.Encrypt(CargaHoraria));

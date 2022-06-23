@@ -1,9 +1,14 @@
-﻿using ProjetoPadraoLideranca.Apresentacao.Util;
+﻿using AutoMapper;
+using ProjetoPadraoLideranca.Apresentacao.Util;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web.Mvc;
+using VendaTsdigital.Apresentacao.Util;
 using VendaTsdigital.Dominio.Entidades;
+using VendaTsdigital.Dominio.Entidades.dtos;
+using VendaTsdigital.Dominio.Interfaces;
 using VendaTsdigital.Infra.Data.Repository;
 
 namespace ProjetoPadraoLideranca.Apresentacao.Controllers
@@ -41,16 +46,46 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                 List<Funcionario> listaAtual = new List<Funcionario>();
                 listaNova = repository.BaixarListaAtualizadaFuncionProc();
                 listaAtual = repository.ListarAtualFuncionProc();
+                
+                List<FuncionarioNovoDto> mapped = new List<FuncionarioNovoDto>();  
 
                 if(listaAtual.Count() == 0)
                 {
-                    repository.AdicionarNovosFuncionarios(listaNova);
+                    foreach (var funcDto in listaNova)
+                    {
+                        var funcNovo = new FuncionarioNovoDto();
+                        funcNovo.ApelidoBase = CrytoUtil.Encrypt(funcDto.ApelidoBase);
+                        funcNovo.NomeBase = CrytoUtil.Encrypt(funcDto.NomeBase);
+                        funcNovo.Ativo = funcDto.Ativo;
+                        mapped.Add(funcNovo);
+                    }
+
+                     
+                    DataTable map = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
+                    repository.AdicionarNovosFuncionarios(map);
                 }
-                else
+                else 
                 {
+                    //ponto de gargalo no sistema
+                    var diferenca =  listaNova.Where(l => !listaAtual.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
 
+
+                    if(diferenca.Any())
+                    {
+                        foreach (var f in diferenca)
+                        {
+                            var funcNovo = new FuncionarioNovoDto();
+                            funcNovo.ApelidoBase = CrytoUtil.Encrypt(f.ApelidoBase);
+                            funcNovo.NomeBase = CrytoUtil.Encrypt(f.NomeBase);
+                            funcNovo.Ativo = f.Ativo;
+                            mapped.Add(funcNovo);
+                        }
+                        DataTable map = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
+                        repository.AdicionarNovosFuncionarios(map);
+                    }
                 }
 
+                    return null;
 
 
             }
