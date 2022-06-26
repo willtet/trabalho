@@ -81,6 +81,8 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                 projetosJiras = repository.consultaProjetosJira(projeto);
                 foreach (var projetoReal in projetosJiras)
                 {
+
+
                     var config = new MapperConfiguration(cfg => cfg.CreateMap<ProjetosJira, ProjetosJiraDto>());
                     var mapper = config.CreateMapper();
 

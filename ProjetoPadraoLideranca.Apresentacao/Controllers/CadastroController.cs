@@ -67,7 +67,7 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                 else 
                 {
                     //ponto de gargalo no sistema
-                    var diferenca =  listaNova.Where(l => !listaAtual.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
+                    IEnumerable<Funcionario> diferenca =  listaNova.Where(l => !listaAtual.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
 
 
                     if(diferenca.Any())
@@ -83,6 +83,13 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                         DataTable map = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
                         repository.AdicionarNovosFuncionarios(map);
                     }
+
+
+
+                    IEnumerable<Funcionario> diferencas = listaNova.Where(l => listaAtual.Any(e => l.ApelidoBase == e.ApelidoD 
+                                                                                                && l.Ativo != e.Ativo)).ToList();
+                    var x = 1;
+
                 }
 
                     return null;
@@ -99,7 +106,7 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
         }
 
         [HttpGet]
-        public ActionResult Consultar(string Nome = null, string Regime = null, string Tipo = null)
+        public ActionResult Consultar(string Nome = null, string Regime = null, string Tipo = null, bool Ativos = false)
         {
             try
             {
@@ -108,7 +115,7 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                 retorno = repository.ConsultarFuncionarios();
 
                 List<Funcionario> filteredList = retorno.Where(f => 
-                                                                    f.Nome.Contains((Nome == "" | Nome == null) ? "" : Nome) &&
+                                                                    f.NomeD.Contains((Nome == "" | Nome == null) ? "" : Nome) &&
                                                                     f.RegimeD.Contains((Regime == "" | Regime == null) ? "" : Regime) &&
                                                                     f.TipoD.Contains((Tipo == "" | Tipo == null) ? "" : Tipo)
 

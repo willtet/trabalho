@@ -1,9 +1,34 @@
-﻿var $table = $('#tblFuncionario');
+﻿
+
+var $table = $('#tblFuncionario');
 
 $(function () {
+    MontarLista()
     AtualizaListaCadastro();
     
 });
+
+function MontarLista() {
+    var regime = [
+        { nome: 'CLT' },
+        { nome: 'PJ' }
+    ];
+
+    var tipo = [
+        {nome: 'CAPEX' },
+        {  nome: 'OPEX' }
+    ];
+
+    var ativos = [
+        { nome: 'Todos' },
+        { nome: 'Ativos' },
+        { nome: 'Inativos' }
+    ];
+
+    montaSelectList("#regime", regime, "nome", "nome", "");
+    montaSelectList("#tipo", tipo, "nome", "nome", "");
+    montaSelectList("#ativos", ativos, "nome", "nome", "");
+}
 
 
 
@@ -92,8 +117,8 @@ function ConsultarResultadoProjeto() {
     var _data = { nome: "", regime: "", tipo: "" }
 
     _data.nome = $("#nome").val();
-    _data.regime = $("#regime").val();
-    _data.tipo = $("#tipo").val();
+    _data.regime = $("#regime").find(":selected").val();
+    _data.tipo = $("#tipo").find(":selected").val();
     debugger
 
     $("#tblFuncionario").hide();
