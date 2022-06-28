@@ -88,7 +88,6 @@ namespace VendaTsdigital.Infra.Data.Repository
         {
             try
             {
-
                 return this.GetAll(new Funcionario(), Funcionario.ListarAtualFuncionProc).ToList();
             }
             catch (Exception e)
@@ -112,7 +111,7 @@ namespace VendaTsdigital.Infra.Data.Repository
 
         public Funcionario AtualizarDadosFuncionario(int CodFuncionario, string Nome, string Regime, string Tipo, string CargaHoraria,
                                                         string Salario, string Vt, string Vr, string Va, string Medica, string Odonto,
-                                                        string Seguro, string Creche, string Baba)
+                                                        string Seguro, string Creche, string Baba, string usuario)
         {
             try
             {
@@ -121,6 +120,7 @@ namespace VendaTsdigital.Infra.Data.Repository
                 string cpf = string.Empty;
 
                 parameters.Add("@CodFuncionario", CodFuncionario);
+                parameters.Add("@usuario", usuario);
                 parameters.Add("@nome", CrytoUtil.Encrypt(Nome));
                 parameters.Add("@regime", CrytoUtil.Encrypt(Regime));
                 parameters.Add("@tipo", CrytoUtil.Encrypt(Tipo));
@@ -199,5 +199,24 @@ namespace VendaTsdigital.Infra.Data.Repository
                 throw e;
             }
         }
+
+        public List<Funcionario> TrazerListaAtualizadaFuncionarios(DataTable listaAtual, DataTable listaNova)
+        {
+            try
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@TblFuncionariosAtual", listaAtual.AsTableValuedParameter("[dbo].[FuncionarioEncryptedType]"));
+                parameters.Add("@TblFuncionariosNovos", listaNova.AsTableValuedParameter("[dbo].[FuncionarioEncryptedType]"));
+
+
+                return this.GetAll(new Funcionario(), parameters, Funcionario.TrazerListaAtualizadaFuncionarios).ToList();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
     }
 }

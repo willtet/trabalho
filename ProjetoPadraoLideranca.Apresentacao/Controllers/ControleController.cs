@@ -131,7 +131,60 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
 
                 System.Data.DataSet ds = new System.Data.DataSet();
                 DataTable dt = new DataTable();
+
+
                 dt = ToDataTable<RelatorioJira> (relatorioRepository.PesquisarResultado(regime, mes, ano));
+                dt.Columns.Remove("Horas");
+                dt.Columns.Remove("AssessoriaConsultaPJ");
+                dt.Columns.Remove("SalarioOrdenado");
+                dt.Columns.Remove("HoraExtra");
+                dt.Columns.Remove("Ferias");
+                dt.Columns.Remove("DecimoTerceiroProvisao");
+                dt.Columns.Remove("INSS");
+                dt.Columns.Remove("INSSProvisaoFerias");
+                dt.Columns.Remove("INSSProvisaoDecimoTerceiro");
+                dt.Columns.Remove("FGTS");
+                dt.Columns.Remove("FGTSProvisaoFerias");
+                dt.Columns.Remove("FGTSProvisaoDecimoTerceiro");
+                dt.Columns.Remove("Medica");
+                dt.Columns.Remove("Odonto");
+                dt.Columns.Remove("Pensao");
+                dt.Columns.Remove("TaxaAdmPensao");
+                dt.Columns.Remove("Seguro");
+                dt.Columns.Remove("Vt");
+                dt.Columns.Remove("Vr");
+                dt.Columns.Remove("Cesta");
+                dt.Columns.Remove("Creche");
+                dt.Columns.Remove("Va");
+                dt.Columns.Remove("Baba");
+
+                dt.Columns["HorasFormatado"].ColumnName = "Horas";
+                dt.Columns["Horas"].SetOrdinal(2);
+                dt.Columns["AssessoriaConsultaPJFormatado"].ColumnName = "AssessoriaConsultaPJ";
+                dt.Columns["SalarioOrdenadoFormatado"].ColumnName = "SalarioOrdenado";
+                dt.Columns["HoraExtraFormatado"].ColumnName = "HoraExtra";
+                dt.Columns["FeriasFormatado"].ColumnName = "Ferias";
+                dt.Columns["DecimoTerceiroProvisaoFormatado"].ColumnName = "DecimoTerceiroProvisao";
+                dt.Columns["INSSFormatado"].ColumnName = "INSS";
+                dt.Columns["INSSProvisaoFeriasFormatado"].ColumnName = "INSSProvisaoFerias";
+                dt.Columns["INSSProvisaoDecimoTerceiroFormatado"].ColumnName = "INSSProvisaoDecimoTerceiro";
+                dt.Columns["FGTSFormatado"].ColumnName = "FGTS";
+                dt.Columns["FGTSProvisaoFeriasFormatado"].ColumnName = "FGTSProvisaoFerias";
+                dt.Columns["FGTSProvisaoDecimoTerceiroFormatado"].ColumnName = "FGTSProvisaoDecimoTerceiro";
+                dt.Columns["MedicaFormatado"].ColumnName = "Medica";
+                dt.Columns["OdontoFormatado"].ColumnName = "Odonto";
+                dt.Columns["PensaoFormatado"].ColumnName = "Pensao";
+                dt.Columns["TaxaAdmPensaoFormatado"].ColumnName = "TaxaAdmPensao";
+                dt.Columns["SeguroFormatado"].ColumnName = "Seguro";
+                dt.Columns["VtFormatado"].ColumnName = "Vt";
+                dt.Columns["VrFormatado"].ColumnName = "Vr";
+                dt.Columns["CestaFormatado"].ColumnName = "Cesta";
+                dt.Columns["CrecheFormatado"].ColumnName = "Creche";
+                dt.Columns["VaFormatado"].ColumnName = "Va";
+                dt.Columns["BabaFormatado"].ColumnName = "Baba";
+
+
+
                 ds.Tables.Add(dt);
                 MemoryStream stream = new MemoryStream();
 

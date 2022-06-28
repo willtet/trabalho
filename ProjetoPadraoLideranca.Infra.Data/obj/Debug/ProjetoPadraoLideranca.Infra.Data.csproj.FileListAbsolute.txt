@@ -33,3 +33,38 @@ C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca.Infr
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca.Infra.Data\obj\Debug\VendaTsdigital.Infra.Data.pdb
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca.Infra.Data\bin\Debug\GetSenha451.dll
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Lidercap.Auth.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\VendaTsdigital.Infra.Data.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\VendaTsdigital.Infra.Data.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Dapper.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\log4net.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\StackExchange.Redis.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Data.Common.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\VendaTsdigital.Dominio.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.Mvc.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Dotlib.RoleParser.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.Razor.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\VendaTsdigital.Dominio.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Dapper.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\GetSenha451.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\log4net.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\StackExchange.Redis.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.Mvc.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.Razor.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\obj\Debug\ProjetoPadraoLideranca.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\obj\Debug\ProjetoPadraoLideranca.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\obj\Debug\ProjetoPadraoLideranca.Infra.Data.csproj.CopyComplete
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\obj\Debug\VendaTsdigital.Infra.Data.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\obj\Debug\VendaTsdigital.Infra.Data.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\GetSenha451.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca.Infra.Data\bin\Debug\Lidercap.Auth.dll

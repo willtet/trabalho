@@ -8,6 +8,7 @@ namespace VendaTsdigital.Dominio.Entidades.dtos
 {
     public class FuncionarioNovoDto
     {
+        public int CodFuncionario { get; set; }
         public string NomeBase { get; set; }
         public string ApelidoBase { get; set; }
         public bool Ativo { get; set; }

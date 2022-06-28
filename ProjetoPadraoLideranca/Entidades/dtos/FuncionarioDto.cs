@@ -11,8 +11,8 @@ namespace VendaTsdigital.Dominio.Entidades.dtos
     {
 
         public int CodFuncionario { get; set; }
-        public string Nome { get; set; }
-        public string Apelido { get; set; }
+        public string NomeD { get; set; }
+        public string ApelidoD { get; set; }
         public string RegimeD { get; set; }
         public string TipoD { get; set; }
         public string CargaHorariaD { get; set; }

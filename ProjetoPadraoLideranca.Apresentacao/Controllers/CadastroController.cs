@@ -13,7 +13,7 @@ using VendaTsdigital.Infra.Data.Repository;
 
 namespace ProjetoPadraoLideranca.Apresentacao.Controllers
 {
-    public class CadastroController : Controller
+    public class CadastroController : BaseController
     {
         // GET: Modelo
         public ActionResult Index()
@@ -54,6 +54,7 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                     foreach (var funcDto in listaNova)
                     {
                         var funcNovo = new FuncionarioNovoDto();
+                        funcNovo.CodFuncionario = 0;
                         funcNovo.ApelidoBase = CrytoUtil.Encrypt(funcDto.ApelidoBase);
                         funcNovo.NomeBase = CrytoUtil.Encrypt(funcDto.NomeBase);
                         funcNovo.Ativo = funcDto.Ativo;
@@ -66,11 +67,67 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                 }
                 else 
                 {
+
+                    //List<FuncionarioNovoDto> mappedAux = new List<FuncionarioNovoDto>(); 
+
+                    //foreach (var funcDto in listaNova)
+                    //{
+                    //    var funcNovo = new FuncionarioNovoDto();
+                    //    funcNovo.CodFuncionario = 0;
+                    //    funcNovo.ApelidoBase = funcDto.ApelidoBase;
+                    //    funcNovo.NomeBase = funcDto.NomeBase;
+                    //    funcNovo.Ativo = funcDto.Ativo;
+                    //    mapped.Add(funcNovo);
+                    //}
+
+                    //foreach (var funcDto in listaAtual)
+                    //{
+                    //    var funcNovo = new FuncionarioNovoDto();
+                    //    funcNovo.CodFuncionario = funcDto.CodFuncionario;
+                    //    funcNovo.ApelidoBase = funcDto.ApelidoD;
+                    //    funcNovo.NomeBase = funcDto.NomeD;
+                    //    funcNovo.Ativo = funcDto.Ativo;
+                    //    mappedAux.Add(funcNovo);
+                    //}
+                    //DataTable map = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
+                    //DataTable mapAux = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mappedAux);
+
+                    //List<Funcionario>   x = repository.TrazerListaAtualizadaFuncionarios(map, mapAux);
+
+
                     //ponto de gargalo no sistema
-                    IEnumerable<Funcionario> diferenca =  listaNova.Where(l => !listaAtual.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
+                    //IEnumerable<Funcionario> diferenca = listaNova.Where(l => !listaAtual.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
 
 
-                    if(diferenca.Any())
+                    var dif = listaNova.Select(l => l.ApelidoBase).Except(listaAtual.Select(e => e.ApelidoD)).ToList();
+                    var diferenca = (from std in listaNova
+                               join std2 in dif on std.ApelidoBase equals std2.ToString()
+                               select std);
+
+                    //HashSet<Funcionario> lista = new HashSet<Funcionario>(listaAtual);
+                    //IEnumerable<Funcionario> diferenca = listaNova.Where(l => !lista.Any(e => l.ApelidoBase == e.ApelidoD)).ToList();
+
+
+
+
+
+                    //List<Funcionario> diferenca = new List<Funcionario>();
+                    //foreach(var item in listaNova)
+                    //{
+                    //    if(!listaAtual.Exists(x => x.ApelidoBase == item.ApelidoD))
+                    //    {
+                    //        diferenca.Add(item);
+                    //    }
+                    //}
+
+                    //var diferenca = from n in listaNova
+                    //        where !(from a in listaAtual
+                    //                select a.ApelidoD).Contains(n.ApelidoBase)
+                    //        select n;
+
+
+
+                    if (diferenca.Any())
                     {
                         foreach (var f in diferenca)
                         {
@@ -80,19 +137,23 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                             funcNovo.Ativo = f.Ativo;
                             mapped.Add(funcNovo);
                         }
-                        DataTable map = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
-                        repository.AdicionarNovosFuncionarios(map);
+                        DataTable maps = new UtilsEditDoc().ToDataTable<FuncionarioNovoDto>(mapped);
+                        repository.AdicionarNovosFuncionarios(maps);
                     }
 
 
 
-                    IEnumerable<Funcionario> diferencas = listaNova.Where(l => listaAtual.Any(e => l.ApelidoBase == e.ApelidoD 
-                                                                                                && l.Ativo != e.Ativo)).ToList();
-                    var x = 1;
+
+                    listaNova = repository.BaixarListaAtualizadaFuncionProc();
+                    listaAtual = repository.ListarAtualFuncionProc();
+                    var ativo = listaNova.Select(l => l.Ativo).Except(listaAtual.Select(e => e.Ativo)).ToList();
+                    //diferenca = (from std in listaNova
+                    //             join std2 in ativo on std.Ativo equals std2.
+                    //             select std);
 
                 }
 
-                    return null;
+                return null;
 
 
             }
@@ -179,7 +240,8 @@ namespace ProjetoPadraoLideranca.Apresentacao.Controllers
                     Odonto,                              
                     Seguro, 
                     Creche, 
-                    Baba);
+                    Baba,
+                    _User.Login);
 
                 JsonResult jr = Json(new RetornoJson().Retorno(true, retorno, 0), JsonRequestBehavior.AllowGet);
                 jr.MaxJsonLength = int.MaxValue;

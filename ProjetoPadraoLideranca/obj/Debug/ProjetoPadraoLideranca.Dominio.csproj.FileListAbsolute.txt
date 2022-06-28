@@ -7,3 +7,12 @@ C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca\obj\
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca\obj\Debug\ProjetoPadraoLideranca.Dominio.csproj.CopyComplete
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca\obj\Debug\VendaTsdigital.Dominio.dll
 C:\Users\Willian\Desktop\Lidercap\APP\projeto padrao\ProjetoPadraoLideranca\obj\Debug\VendaTsdigital.Dominio.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\bin\Debug\VendaTsdigital.Dominio.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\bin\Debug\VendaTsdigital.Dominio.pdb
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\bin\Debug\Dapper.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\bin\Debug\Dapper.xml
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\obj\Debug\ProjetoPadraoLideranca.Dominio.csproj.AssemblyReference.cache
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\obj\Debug\ProjetoPadraoLideranca.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\obj\Debug\ProjetoPadraoLideranca.Dominio.csproj.CopyComplete
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\obj\Debug\VendaTsdigital.Dominio.dll
+C:\Users\wtakashi\Desktop\Projeto-dev\APP\trabalho\ProjetoPadraoLideranca\obj\Debug\VendaTsdigital.Dominio.pdb

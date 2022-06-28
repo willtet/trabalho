@@ -18,8 +18,10 @@ namespace VendaTsdigital.Dominio.Entidades
         public static string BaixarListaAtualizadaFuncionProc = "BaixarListaAtualizadaFuncionProc";
         public static string ListarAtualFuncionProc = "ListarAtualFuncionProc";
         public static string InserirListaFuncionariosProc = "InserirListaFuncionariosProc";
-
+        public static string AtualizarFuncionarios = "AtualizarFuncionarios";
+        public static string TrazerListaAtualizadaFuncionarios = "TrazerListaAtualizadaFuncionarios";
         
+
 
 
         public int CodFuncionario { get; set; }
